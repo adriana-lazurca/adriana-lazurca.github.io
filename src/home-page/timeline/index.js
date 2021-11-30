@@ -1,7 +1,9 @@
+import "./timeline.css"
+
 const Timeline = () => {
    return (
       <>
-         <div>Timeline</div>
+         <div className="timeline-container">Timeline</div>
       </>
    );
 };

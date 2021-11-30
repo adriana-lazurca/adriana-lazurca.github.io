@@ -1,31 +1,16 @@
+import PresentationCard from '../presentation-card';
+import Carousel from '../carousel';
+import Contact from '../contact';
+import './introduction.css';
+
 const Introduction = () => {
    return (
-      <>
+      <div className='introduction-container'>
          <PresentationCard />
          <Carousel />
          <Contact />
-      </>
+      </div>
    );
 };
-
-function PresentationCard() {
-   return <>Name+position</>;
-}
-
-function Carousel() {
-   return (
-      <>
-         <div>Carousel</div>
-      </>
-   );
-}
-
-function Contact() {
-   return (
-      <>
-         <div>Contact icons</div>
-      </>
-   );
-}
 
 export default Introduction;

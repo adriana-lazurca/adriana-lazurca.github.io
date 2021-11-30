@@ -1,7 +1,7 @@
 import './home-page.css';
 import Introduction from './introduction';
 import Timeline from './timeline';
-import Navigation from './navigation/Navigation';
+import Navigation from './navigation';
 
 // contine tot
 const HomePage = () => {
