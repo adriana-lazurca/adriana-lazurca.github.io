@@ -1,7 +1,9 @@
+import './carousel.scss';
+
 const Carousel = () => {
    return (
       <>
-         <div>Carousel</div>
+         <div className='carousel'>Carousel</div>
       </>
    );
 };

@@ -1,7 +1,7 @@
 import PresentationCard from '../presentation-card';
 import Carousel from '../carousel';
 import Contact from '../contact';
-import './introduction.css';
+import './introduction.scss';
 
 const Introduction = () => {
    return (

@@ -1,9 +1,8 @@
-import './home-page.css';
+import './home-page.scss';
 import Introduction from './introduction';
 import Timeline from './timeline';
 import Navigation from './navigation';
 
-// contine tot
 const HomePage = () => {
    return (
       <>

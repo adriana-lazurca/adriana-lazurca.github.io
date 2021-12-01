@@ -1,5 +1,7 @@
+import './presentation-card.scss';
+
 const PresentationCard = () => {
-   return <>Name+position</>;
+   return <div className='presentation'>Name+position</div>;
 };
 
 export default PresentationCard;
