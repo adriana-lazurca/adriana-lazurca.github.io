@@ -8,7 +8,7 @@ const HomePage = () => {
       <>
          <Introduction />
          <Timeline />
-         <Navigation />
+         {/* <Navigation /> */}
       </>
    );
 };

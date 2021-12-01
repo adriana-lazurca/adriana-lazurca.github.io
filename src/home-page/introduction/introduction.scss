@@ -1,2 +1,21 @@
+@import "../../assets/sass/variables/colors";
+
 .introduction-container {
+    height: 100vh;
+    background-color: rgb(181, 184, 178);
+    display: grid;
+    gap: 1em;
+    grid-template-rows: 20% auto 20%;
+    grid-template-columns: 1rem auto 1rem;
+    grid-template-areas:
+        " . presentation"
+        " . carousel"
+        " .  contact";
+}
+
+.introduction-container > div {
+    background-color: $color-pure-black;
+    color: $color-pure-white;
+    text-align: center;
+    margin: 1rem;
 }

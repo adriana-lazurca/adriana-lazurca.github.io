@@ -1,7 +1,11 @@
+import './contact.scss';
+
 const Contact = () => {
    return (
       <>
-         <div>Contact icons</div>
+         <div className='contact'>
+            <p>Contact icons</p>
+         </div>
       </>
    );
 };

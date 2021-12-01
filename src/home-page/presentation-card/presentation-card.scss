@@ -1,7 +1,9 @@
-@import '../../assets/sass/variables/colors';
-
+@import "../../assets/sass/variables/colors";
 
 .presentation {
-    background-color: $color-pure-black;
-    margin: 1rem;
+    grid-area: presentation;
+    //  grid-column: 2 /  3;
+    // grid-row: 1 / 2;
+    //or
+    //grid-area: 2 / 3 / 1 / span 2;
 }
