@@ -1,9 +1,0 @@
-.timeline-container {
-    height: 100vh;
-    background-color: khaki;
-    display: grid;
-    gap: 1em;
-    grid-template-rows: auto;
-    grid-template-columns: 2fr auto;
-    grid-template-areas: "navigation job ";
-}

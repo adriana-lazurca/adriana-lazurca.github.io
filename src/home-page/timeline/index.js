@@ -1,10 +1,13 @@
-import "./timeline.css"
+import { Job } from '../job';
+import './timeline.scss';
 
 const Timeline = () => {
    return (
-      <>
-         <div className="timeline-container">Timeline</div>
-      </>
+      <div className='line'>
+         <div className='timeline-container'>
+            <Job />
+         </div>
+      </div>
    );
 };
 

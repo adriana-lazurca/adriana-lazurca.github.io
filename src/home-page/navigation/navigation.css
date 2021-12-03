@@ -1,9 +1,9 @@
 .navigation {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(10, 9, 9);
+    background-color: rgb(17, 59, 43);
     color: white;
 }
 

@@ -5,12 +5,11 @@
     background-color: rgb(181, 184, 178);
     display: grid;
     gap: 1em;
-    grid-template-rows: 20% auto 20%;
-    grid-template-columns: 1rem auto 1rem;
+    grid-template: 10% 20% 40% 20% 10%/1rem auto 1rem;
     grid-template-areas:
         " . presentation"
         " . carousel"
-        " .  contact";
+        " . contact";
 }
 
 .introduction-container > div {
@@ -18,4 +17,5 @@
     color: $color-pure-white;
     text-align: center;
     margin: 1rem;
+    grid-column: 2 / 3;
 }

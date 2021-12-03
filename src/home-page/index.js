@@ -5,14 +5,14 @@ import Navigation from './navigation';
 
 const HomePage = () => {
    return (
-      <>
-         <Introduction />
-         <Timeline />
-         {/* <Navigation /> */}
-      </>
+      <div className="home-page-container">
+         <div className="main-content">
+            <Introduction />
+            <Timeline />
+         </div>
+         <Navigation />
+      </div>
    );
 };
-
-
 
 export default HomePage;
