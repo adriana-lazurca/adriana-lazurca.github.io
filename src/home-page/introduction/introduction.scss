@@ -1,15 +1,18 @@
 @import "../../assets/sass/variables/colors";
+@import "../../assets/sass/variables/breakpoints";
 
 .introduction-container {
     height: 100vh;
     background-color: rgb(181, 184, 178);
     display: grid;
     gap: 1em;
-    grid-template: 10% 20% 40% 20% 10%/1rem auto 1rem;
+    //grid-template: 0.5fr 1fr 5fr 1fr 0.5fr/1rem auto auto auto 1rem;
+    grid-template-columns: repeat(3, fr);
+    grid-template-rows: 0.5fr 1fr 5fr 1fr 0.5fr;
     grid-template-areas:
-        " . presentation"
-        " . carousel"
-        " . contact";
+        " . presentation ."
+        " . carousel ."
+        " . contact .";
 }
 
 .introduction-container > div {
@@ -17,5 +20,10 @@
     color: $color-pure-white;
     text-align: center;
     margin: 1rem;
-    grid-column: 2 / 3;
+}
+
+@media all and (min-width: $bp-md) {
+    .introduction-container {
+        font-size: 1.5rem;
+    }
 }
