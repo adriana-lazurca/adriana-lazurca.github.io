@@ -1,7 +1,12 @@
-$bp-xs: 35em; //max width
+$bp-xs: 35em; //560px - max width
 // $bp-small2:29em;
-$bp-sm: 36em;//or 40 //min-width
-$bp-md: 48em;
-$bp-lg: 62em; //or 64
-$bp-xl: 75em; //or 80
-$bp-xxl: 96em; 
+
+$bp-sm: 36em; //576px
+
+$bp-md: 48em; //768px
+
+$bp-lg: 62em; //992px
+
+$bp-xl: 75em; //1200px
+
+$bp-xxl: 96em; //1536px
