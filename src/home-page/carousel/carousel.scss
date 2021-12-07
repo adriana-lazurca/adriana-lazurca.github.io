@@ -1,13 +1,13 @@
 .carousel {
-    display: grid;
+    //display: grid;
     grid-area: carousel;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: subgrid;
+    //grid-template-columns: 1fr 5fr 1fr;
+    //grid-template-rows: subgrid;
 }
 
 .carousel-card {
-    grid-row: 1;
-    grid-column: 2/3;
+    //grid-row: 1;
+    //grid-column: 2/3;
 }
