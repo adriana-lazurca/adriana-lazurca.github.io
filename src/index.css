@@ -12,18 +12,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-/* * {
+* {
   box-sizing: border-box;
 }
-
-@media all and (min-width: $bp-lg) {
-  * {
-      font-size: 1.5rem;
-  }
-}
-
-@media all and (min-width: $bp-sm) {
-  * {
-      font-size: 1.2rem;
-  }
-} */

@@ -10,4 +10,10 @@
 .carousel-card {
     //grid-row: 1;
     //grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
 }
