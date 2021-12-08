@@ -2,13 +2,11 @@
 
 .presentation {
     grid-area: presentation;
-    //grid-column: 2 /  3;
     grid-row: 2 / 3;
-    //or
-    //grid-area: 2 / 3 / 1 / span 2;
 }
 
-img{
-    width: 8rem;
+img {
+    width: 6rem;
     height: 8rem;
+    border-radius: 30%;
 }
