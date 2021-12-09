@@ -6,13 +6,12 @@
     background-color: rgb(181, 184, 178);
     display: grid;
     gap: 1em;
-    //grid-template: 0.5fr 1fr 5fr 1fr 0.5fr/1rem auto auto auto 1rem;
-    grid-template-columns: repeat(3, fr);
-    grid-template-rows: 0.5fr 1fr 5fr 1fr 0.5fr;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 5fr 1fr;
     grid-template-areas:
-        " . presentation ."
-        " . carousel ."
-        " . contact .";
+        "presentation"
+        "carousel"
+        "contact";
 }
 
 .introduction-container > div {
