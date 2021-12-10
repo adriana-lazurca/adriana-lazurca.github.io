@@ -1,7 +1,7 @@
 //@import "colors";
 @import "../../assets/styles/variables/colors";
 
-.introduction-container {
+.introduction {
     height: 100%;
     background-color: rgb(181, 184, 178);
     display: grid;
@@ -14,7 +14,7 @@
         "contact";
 }
 
-.introduction-container > div {
+.introduction > div {
     background-color: $color-pure-black;
     color: $color-pure-white;
     text-align: center;

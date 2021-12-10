@@ -1,12 +1,12 @@
-import {PresentationCard} from '../presentation-card';
+import { Presentation } from '../presentation';
 import { Carousel } from '../carousel';
 import { Contact } from '../contact';
 import './introduction.scss';
 
 export const Introduction = () => {
    return (
-      <div className='introduction-container'>
-         <PresentationCard />
+      <div className='introduction'>
+         <Presentation />
          <Carousel />
          <Contact />
       </div>

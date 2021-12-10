@@ -1,8 +1,8 @@
-import './presentation-card.scss';
+import './presentation.scss';
 import '../../assets/styles/variables/_breakpoints.scss';
 import bigPhoto from '../../assets/images/adriana-big.jpg';
 
-export const PresentationCard = () => {
+export const Presentation = () => {
    return (
       <div className='presentation'>
          <img src={bigPhoto} alt='adriana' />
