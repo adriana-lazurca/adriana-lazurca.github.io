@@ -1,6 +1,6 @@
-import './presentation.scss';
 import '../../assets/styles/variables/_breakpoints.scss';
 import bigPhoto from '../../assets/images/adriana-big.jpg';
+import './presentation.scss';
 
 export const Presentation = () => {
    return (
