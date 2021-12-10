@@ -1,12 +1,12 @@
-import './home-page.scss';
+import './home.scss';
 import {Introduction} from './introduction';
 import {Timeline} from './timeline';
 import {Navigation} from './navigation';
 
-export const HomePage = () => {
+export const Home = () => {
    return (
-      <div className="home-page-container">
-         <div className="main-content">
+      <div className="home">
+         <div className="home__content">
             <Introduction />
             <Timeline />
          </div>

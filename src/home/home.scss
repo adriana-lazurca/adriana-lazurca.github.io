@@ -1,13 +1,13 @@
 @import "../assets/styles/variables/breakpoints";
 
-.home-page-container {
+.home {
   height: 100vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-.main-content {
+.home__content {
   height: 93%;
   overflow: auto;
 }
