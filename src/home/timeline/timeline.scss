@@ -1,7 +1,9 @@
-/* The actual timeline (the vertical ruler) */
+@import "../../assets/styles/variables/breakpoints";
+
+// The timeline container
 .timeline {
     position: relative;
-    max-width: 1200px;
+    max-width: 85%;
     margin: 0 auto;
 }
 
@@ -9,8 +11,8 @@
 .timeline::after {
     content: "";
     position: absolute;
-    width: 6px;
-    background-color: rgb(219, 22, 170);
+    width: 0.5rem;
+    background-color: rgb(25, 11, 221);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -90,32 +92,34 @@
     border-radius: 6px;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+/* Media queries*/
+@media screen and (max-width: $bp-lg) {
     /* Place the timelime to the left */
     .timeline::after {
-        left: 31px;
+        left: 6%;
+        margin-left: 0px; //tocheck added by me
     }
 
     /* Full-width containers */
     .container {
-        width: 100%;
         padding-left: 70px;
         padding-right: 25px;
+        width: 100%;
     }
 
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
         left: 60px;
-        border: medium solid white;
+        border: medium solid rgb(73, 16, 230);
         border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
+        border-color: transparent rgb(50, 16, 245) transparent transparent;
     }
 
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
-        left: 15px;
+        // left: 15px;
+        left: calc(6% - 0.7rem);
     }
 
     /* Make all right containers behave like the left ones */
