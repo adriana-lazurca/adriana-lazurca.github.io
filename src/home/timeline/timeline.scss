@@ -3,15 +3,15 @@
 // The timeline container
 .timeline {
     position: relative;
-    max-width: 85%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* The timeline(line) */
 .timeline::after {
     content: "";
     position: absolute;
-    width: 0.5rem;
+    width: 5px;
     background-color: rgb(25, 11, 221);
     top: 0;
     bottom: 0;
@@ -93,17 +93,18 @@
 }
 
 /* Media queries*/
-@media screen and (max-width: $bp-lg) {
+@media screen and (max-width: $bp-md) {
     /* Place the timelime to the left */
     .timeline::after {
-        left: 6%;
+        // left: 6%;
+        left: 31px;
         margin-left: 0px; //tocheck added by me
     }
 
     /* Full-width containers */
     .container {
         padding-left: 70px;
-        padding-right: 25px;
+        padding-right: 20px;
         width: 100%;
     }
 
@@ -118,8 +119,8 @@
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
-        // left: 15px;
-        left: calc(6% - 0.7rem);
+        left: 15px;
+        // left: calc(6% - 0.7rem);
     }
 
     /* Make all right containers behave like the left ones */
