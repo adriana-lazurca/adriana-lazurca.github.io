@@ -9,8 +9,8 @@ export const Presentation = () => {
             <img src={bigPhoto} alt='adriana' />
          </div>
          <div className='presentation__title'>
-            <p>Adriana Lazurca</p>
-            <p>FRONT-END DEVELOPER</p>
+            <p>ADRIANA LAZURCA</p>
+            <p>Front-End Developer</p>
          </div>
       </div>
    );

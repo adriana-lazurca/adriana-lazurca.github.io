@@ -5,7 +5,7 @@
     grid-row: 1 / 2;
 
     &__img {
-        height: 50%;
+        height: 60%;
 
         img {
             height: 100%;
@@ -14,11 +14,15 @@
     }
 
     &__title {
-        height: 50%;
+        height: 40%;
 
         p {
             margin: 0;
         }
+    }
+
+    & > div {
+        padding-top: 10px;
     }
 }
 

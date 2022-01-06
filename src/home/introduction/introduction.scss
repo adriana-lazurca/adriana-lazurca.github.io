@@ -14,10 +14,11 @@
         "presentation"
         "carousel"
         "contact";
+
+    & > div {
+        background-color: $color-pure-black;
+        color: $color-pure-white;
+        text-align: center;
+    }
 }
 
-.introduction > div {
-    background-color: $color-pure-black;
-    color: $color-pure-white;
-    text-align: center;
-}

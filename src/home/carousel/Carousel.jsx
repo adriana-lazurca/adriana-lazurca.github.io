@@ -8,10 +8,7 @@ export const Carousel = () => {
                About me: I'm Adriana Lazurca Correia from Romania! I'm Adriana Lazurca Correia from Romania! I'm Adriana
                Lazurca Correia from Romania!I'm Adriana Lazurca Correia from Romania!I'm Adriana Lazurca Correia from
                Romania! I'm Adriana Lazurca Correia from Romania!I'm Adriana Lazurca Correia from Romania!I'm Adriana
-               Lazurca Correia from Romania! About me: I'm Adriana Lazurca Correia from Romania! I'm Adriana Lazurca
-               Correia from Romania! I'm Adriana Lazurca Correia from Romania!I'm Adriana Lazurca Correia from
-               Romania!I'm Adriana Lazurca Correia from Romania! I'm Adriana Lazurca Correia from Romania!I'm Adriana
-               Lazurca Correia from Romania!I'm Adriana Lazurca Correia from Romania!
+               Lazurca Correia from Romania! 
             </p>
          </div>
       </div>

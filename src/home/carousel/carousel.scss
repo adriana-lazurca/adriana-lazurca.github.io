@@ -1,13 +1,13 @@
 .carousel {
     grid-area: carousel;
-    grid-row: 2 / 3; //tocheck : good for bem?
-}
+    grid-row: 2 / 3;
 
-.carousel__card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding-left: 1em;
-    padding-right: 1em;
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 }

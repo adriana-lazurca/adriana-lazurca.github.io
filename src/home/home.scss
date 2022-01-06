@@ -5,11 +5,11 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  }
 
-.home__content {
-  height: 93%;
-  overflow: auto;
+  &__content {
+    height: 93%;
+    overflow: auto;
+    }
   }
 
 @media all and (min-width: $bp-lg) {
