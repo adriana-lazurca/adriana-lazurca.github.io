@@ -6,9 +6,7 @@ export const Carousel = () => {
          <div className='carousel__card'>
             <p>
                About me: I'm Adriana Lazurca Correia from Romania! I'm Adriana Lazurca Correia from Romania! I'm Adriana
-               Lazurca Correia from Romania!I'm Adriana Lazurca Correia from Romania!I'm Adriana Lazurca Correia from
-               Romania! I'm Adriana Lazurca Correia from Romania!I'm Adriana Lazurca Correia from Romania!I'm Adriana
-               Lazurca Correia from Romania! 
+               Lazurca Correia from Romania!I'm Adriana Lazurca Correia from Romania!
             </p>
          </div>
       </div>

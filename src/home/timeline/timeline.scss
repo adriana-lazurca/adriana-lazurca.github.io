@@ -1,13 +1,5 @@
 @import "../../assets/styles/variables/breakpoints";
 
-// .timeline -block
-// .timeline__card
-// .timeline__card-content
-// .card__content
-// .timeline__card__dot
-// .timeline__card--left, ..timeline__card--right
-// .timeline__line
-
 // The timeline container
 .timeline {
     position: relative;
@@ -91,7 +83,6 @@
         }
     }
 
-    /* The actual content */
     &__card-content {
         padding: 20px 30px;
         background-color: rgb(158, 114, 114);
@@ -103,36 +94,36 @@
 /* Media queries*/
 @media screen and (max-width: $bp-md) {
     /* Place the timelime to the left */
-    .timeline::after {
-        // left: 6%;
-        left: 31px;
-        margin-left: 0px; //tocheck added by me
-    }
+    .timeline {
+        &::after {
+            left: 31px;
+            margin-left: 0px; //tocheck added by me
+        }
 
-    /* Full-width containers */
-    .timeline__card {
-        padding-left: 70px;
-        padding-right: 20px;
-        width: 100%;
-    }
+        /* Full-width containers */
+        &__card {
+            padding-left: 70px;
+            padding-right: 20px;
+            width: 100%;
 
-    /* Make sure that all arrows are pointing leftwards */
-    .timeline__card::before {
-        left: 60px;
-        border: medium solid rgb(73, 16, 230);
-        border-width: 10px 10px 10px 0;
-        border-color: transparent rgb(50, 16, 245) transparent transparent;
-    }
+            /* Make sure that all arrows are pointing leftwards */
+            &::before {
+                left: 60px;
+                border: medium solid rgb(73, 16, 230);
+                border-width: 10px 10px 10px 0;
+                border-color: transparent rgb(50, 16, 245) transparent transparent;
+            }
 
-    /* Make sure all circles are at the same spot */
-    .timeline__card--left::after,
-    .timeline__card--right::after {
-        left: 15px;
-        // left: calc(6% - 0.7rem);
-    }
+            /* Make all right containers behave like the left ones */
+            &--right {
+                left: 0%;
+            }
 
-    /* Make all right containers behave like the left ones */
-    .timeline__card--right {
-        left: 0%;
+            /* Make sure all circles are at the same spot */
+            &--left::after,
+            &--right::after {
+                left: 15px;
+            }
+        }
     }
 }
