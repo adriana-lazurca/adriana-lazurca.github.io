@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.39c82c93.chunk.css",
+    "main.css": "/static/css/main.8ebecb55.chunk.css",
     "main.js": "/static/js/main.a3f79e9f.chunk.js",
     "main.js.map": "/static/js/main.a3f79e9f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3c9502af.js",
@@ -10,14 +10,14 @@
     "static/js/3.584a5ba0.chunk.js": "/static/js/3.584a5ba0.chunk.js",
     "static/js/3.584a5ba0.chunk.js.map": "/static/js/3.584a5ba0.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.39c82c93.chunk.css.map": "/static/css/main.39c82c93.chunk.css.map",
+    "static/css/main.8ebecb55.chunk.css.map": "/static/css/main.8ebecb55.chunk.css.map",
     "static/js/2.cdb8f533.chunk.js.LICENSE.txt": "/static/js/2.cdb8f533.chunk.js.LICENSE.txt",
     "static/media/adriana-big.69a159d6.jpg": "/static/media/adriana-big.69a159d6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3c9502af.js",
     "static/js/2.cdb8f533.chunk.js",
-    "static/css/main.39c82c93.chunk.css",
+    "static/css/main.8ebecb55.chunk.css",
     "static/js/main.a3f79e9f.chunk.js"
   ]
 }
