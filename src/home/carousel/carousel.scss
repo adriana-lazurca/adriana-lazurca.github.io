@@ -7,17 +7,38 @@
     &__card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: 100%;
     }
 
     &__card-content {
-        padding-left: 1em;
-        padding-right: 1em;
+        position: relative;
+        flex: 1 1 auto;
+        padding: 1em 3em;
+        background-color: rgb(127, 167, 212);
+    }
+
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+    }
+
+    &__prev {
+        left: 5px;
+    }
+
+    &__next {
+        right: 0;
     }
 
     &__card-list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 1 40px;
+        background-color: greenyellow;
         ul {
             list-style-type: none;
             padding: 0;
@@ -28,13 +49,31 @@
             padding: 0.3em;
             margin: 0 5px;
             border-radius: 20%;
-            background-color: rgb(37, 36, 35);
+            background-color: rgb(81, 100, 141);
             cursor: pointer;
         }
     }
 }
 
-@media screen and (min-width: $bp-sm) {
+@media screen and (min-width: $bp-xs) {
+    .carousel {
+        &__card {
+            max-width: 80%;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width: $bp-lg) {
+    .carousel {
+        &__card {
+            max-width: 70%;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width: $bp-xl) {
     .carousel {
         &__card {
             max-width: 60%;
