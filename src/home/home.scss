@@ -9,17 +9,23 @@
   &__content {
     height: 93%;
     overflow: auto;
-    }
-  }
-
-@media all and (min-width: $bp-lg) {
-  * {
-    font-size: 1.5rem;
   }
 }
 
-@media all and (min-width: $bp-sm) {
+@media all and (min-width: $bp-lg) {
   * {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (min-width: $bp-xl) {
+  * {
+    font-size: 1.7rem;
+  }
+}
+
+@media all and (min-width: $bp-xxl) {
+  * {
+    font-size: 3rem;
   }
 }

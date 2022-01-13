@@ -11,8 +11,10 @@
     }
 
     &__card-content {
-        position: relative;
         flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        position: relative;
         padding: 1em 3em;
         background-color: rgb(127, 167, 212);
     }
@@ -25,7 +27,7 @@
     }
 
     &__prev {
-        left: 5px;
+        left: 0;
     }
 
     &__next {
@@ -33,12 +35,12 @@
     }
 
     &__card-list {
+        flex: 0 1 auto;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex: 0 1 40px;
-        background-color: greenyellow;
+        background-color: rgb(52, 24, 180);
         ul {
             list-style-type: none;
             padding: 0;

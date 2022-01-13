@@ -92,7 +92,7 @@
 }
 
 /* Media queries*/
-@media screen and (max-width: $bp-md) {
+@media screen and (max-width: $bp-sm) {
     /* Place the timelime to the left */
     .timeline {
         &::after {
@@ -127,3 +127,11 @@
         }
     }
 }
+
+
+@media all and (min-width: $bp-xxl) {
+    .timeline {
+      max-width: 2000px;
+    }
+  }
+  
