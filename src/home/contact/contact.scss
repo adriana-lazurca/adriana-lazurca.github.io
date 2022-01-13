@@ -1,4 +1,20 @@
 .contact {
     grid-area: contact;
     grid-row: 3 / 4;
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;  
+        padding: 0;
+        font-size: 2rem;
+
+        li{
+            display: inline;
+            padding: 0 1em;
+        }
+    }
 }
+
+//todo: change icon size to be responsive
