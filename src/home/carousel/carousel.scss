@@ -27,11 +27,11 @@
     }
 
     &__prev {
-        left: 0;
+        left: 3%;
     }
 
     &__next {
-        right: 0;
+        right: 3%;
     }
 
     &__card-list {
@@ -41,6 +41,7 @@
         align-items: center;
         justify-content: center;
         background-color: rgb(52, 24, 180);
+
         ul {
             list-style-type: none;
             padding: 0;
