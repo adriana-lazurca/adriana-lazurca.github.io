@@ -8,7 +8,9 @@
     display: grid;
     gap: 0.3rem;
     grid-template-columns: auto;
-    grid-template-rows: minmax(0, 2fr) minmax(0, 4fr) minmax(0, 1fr);
+    // grid-template-rows: minmax(0, 2fr) minmax(0, 4fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 2fr) minmax(0, 5fr) 50px;
+
     grid-template-areas:
         "presentation"
         "carousel"

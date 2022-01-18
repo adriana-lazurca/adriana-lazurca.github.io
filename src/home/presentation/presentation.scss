@@ -1,4 +1,6 @@
 @import "../../assets/styles/variables/colors";
+@import "../../assets/styles/variables/breakpoints";
+@import "../../assets/styles/variables/text-size";
 
 .presentation {
     grid-area: presentation;
@@ -17,11 +19,16 @@
     &__title {
         height: 40%;
         font-weight: bold;
+        font-size: $h-md;
 
         p {
             margin: 0;
         }
     }
-
 }
 
+// @media all and (min-width: $bp-lg) {
+//     .presentation {
+//         font-size: $h-md;
+//     }
+// }
