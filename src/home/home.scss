@@ -1,4 +1,6 @@
 @import "../assets/styles/variables/breakpoints";
+@import "../assets/styles/variables/text-size";
+
 
 .home {
   height: 100%;
@@ -12,20 +14,32 @@
   }
 }
 
+@media all and (min-width: $bp-md) {
+  body {
+    font-size: $text-base;
+  }
+}
+
 @media all and (min-width: $bp-lg) {
-  * {
-    font-size: 1.3rem;
+  body {
+    font-size: $text-lg;
   }
 }
 
 @media all and (min-width: $bp-xl) {
-  * {
-    font-size: 1.7rem;
+  body {
+    font-size: $text-xl;
   }
 }
 
 @media all and (min-width: $bp-xxl) {
-  * {
-    font-size: 3rem;
+  body {
+    font-size: $text-2xl;
   }
 }
+
+// @media all and (min-width: $bp-xxl) {
+//   body {
+//     font-size: $text-xl;
+//   }
+// }
