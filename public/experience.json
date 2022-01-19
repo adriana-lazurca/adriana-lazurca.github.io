@@ -1,0 +1,67 @@
+[
+   {
+      "id": 1,
+      "institution": {
+         "name": "BeCode",
+         "city": "Brussels"
+      },
+      "startDate": "2021-01-01",
+      "endDate": "2021-07-31",
+      "type": "Web Development - Apprenticeship",
+      "description": [
+         "Front-end: HTML, CSS, JavaScript, Bootstrap, Vue",
+         "Back-end: PHP, Laravel",
+         "Database: MySQL",
+         "Versioning system: Git"
+      ],
+      "technologies": ["html", "css", "javascript", "git", "react", "bootstrap", "vue", "php", "laravel", "sql"]
+   },
+   {
+      "id": 2,
+      "institution": {
+         "name": "„Alexandru Ioan Cuza” University",
+         "city": "Iasi"
+      },
+      "startDate": "2011-10-01",
+      "endDate": "2013-07-31",
+      "type": "Master in Children's Rights",
+      "description": [],
+      "technologies": []
+   },
+   {
+      "id": 3,
+      "institution": {
+         "name": "„Alexandru Ioan Cuza” University",
+         "city": "Iasi"
+      },
+      "startDate": "2008-10-01",
+      "endDate": "2011-07-31",
+      "type": "Bachelor's Degree in Social Work",
+      "description": [],
+      "technologies": []
+   },
+   {
+      "id": 4,
+      "institution": {
+         "name": "Adults Qualification Center",
+         "city": "Iasi"
+      },
+      "startDate": "2012-01-01",
+      "endDate": "2012-03-31",
+      "type": "Basic Accounting",
+      "description": [],
+      "technologies": []
+   },
+   {
+      "id": 5,
+      "institution": {
+         "name": "Ecdl Romania",
+         "city": "Suceava"
+      },
+      "startDate": "2008-01-01",
+      "endDate": "2008-12-31",
+      "type": "European Computer Driving Licence Core",
+      "description": [],
+      "technologies": ["word", "power point", "excel", "access", "outlook"]
+   }
+]
