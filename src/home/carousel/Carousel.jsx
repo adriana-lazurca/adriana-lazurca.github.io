@@ -1,14 +1,12 @@
 import './carousel.scss';
+import { About } from '../about';
 
 export const Carousel = () => {
    return (
       <div className='carousel'>
          <div className='carousel__card'>
             <div className='carousel__card-content'>
-               <p>
-                  About me: I'm Adriana Lazurca Correia from Romania! I'm Adriana Lazurca Correia from Romania! I'm
-                  Adriana Lazurca Correia from Romania!I'm Adriana Lazurca Correia from Romania!
-               </p>
+               <About />
                <a className='carousel__prev'>&lt;</a>
                <a className='carousel__next'>&gt;</a>
             </div>
