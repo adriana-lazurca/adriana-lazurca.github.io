@@ -1,38 +1,35 @@
-[
-   {
-      "id": 1,
-      "firstName": "Adriana",
-      "lastName": "Lazurca",
-      "adreess": {
-         "street": "Chaussée Saint-Pierre 240",
-         "postalCode": 1040,
-         "city": "Brussels"
+{
+   "firstName": "Adriana",
+   "lastName": "Lazurca",
+   "adreess": {
+      "street": "Chaussée Saint-Pierre 240",
+      "postalCode": 1040,
+      "city": "Brussels"
+   },
+   "mail": "adrianar.lazurca@gmail.com",
+   "mobile": 465448696,
+   "jobTitle": "Front-End Developer",
+   "about": "",
+   "languages": [
+      {
+         "name": "romanian",
+         "level": "native"
       },
-      "email": "adrianar.lazurca@gmail.com",
-      "mobile": 465448696,
-      "title": "Front-End Developer",
-      "about": "",
-      "languages": [
-         {
-            "name": "romanian",
-            "level": "native"
-         },
-         {
-            "name": "english",
-            "level": "fluent"
-         },
-         {
-            "name": "portuguese",
-            "level": "fluent"
-         },
-         {
-            "name": "spanish",
-            "level": "fluent"
-         },
-         {
-            "name": "french",
-            "level": "elementary"
-         }
-      ]
-   }
-]
+      {
+         "name": "english",
+         "level": "fluent"
+      },
+      {
+         "name": "portuguese",
+         "level": "fluent"
+      },
+      {
+         "name": "spanish",
+         "level": "fluent"
+      },
+      {
+         "name": "french",
+         "level": "elementary"
+      }
+   ]
+}
