@@ -1,5 +1,6 @@
 import '../../assets/styles/variables/_breakpoints.scss';
 import bigPhoto from '../../assets/images/adriana-big.jpg';
+import '../../assets/styles/text.scss';
 import './presentation.scss';
 
 export const Presentation = () => {
@@ -9,8 +10,8 @@ export const Presentation = () => {
             <img src={bigPhoto} alt='adriana' />
          </div>
          <div className='presentation__title'>
-            <p>ADRIANA LAZURCA</p>
-            <p>Front-End Developer</p>
+            <p className='text-2xl'>ADRIANA LAZURCA</p>
+            <p className='text-lg'>Front-End Developer</p>
          </div>
       </div>
    );

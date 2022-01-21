@@ -1,20 +1,39 @@
+@import "../../assets/styles/variables/breakpoints";
+
+
 .contact {
     grid-area: contact;
     grid-row: 3 / 4;
 
-    &__list{
+    &__list {
         display: flex;
         align-items: center;
         justify-content: center;
-        list-style-type: none;  
+        list-style-type: none;
         padding: 0;
         font-size: 1.3rem;
 
-        li{
+        li {
             display: inline;
             padding: 0 0.5em;
         }
     }
 }
 
-//todo: change icon size to be responsive
+@media all and (min-width: $bp-xl) {
+    .contact {
+        &__list {
+            font-size: 2.3rem;
+        }
+        
+    }
+}
+
+@media all and (min-width: $bp-3xl) {
+    .contact {
+        &__list {
+            font-size: 3.5rem;
+        }
+        
+    }
+}

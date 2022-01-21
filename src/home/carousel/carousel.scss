@@ -17,6 +17,10 @@
         position: relative;
         padding: 1em 3em;
         background-color: rgb(127, 167, 212);
+
+        p {
+            margin: auto;
+        }
     }
 
     &__prev,
@@ -63,6 +67,16 @@
         &__card {
             max-width: 80%;
             margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width: $bp-md) {
+    .carousel {
+        &__card-content {
+            p {
+                max-width: 60%;
+            }
         }
     }
 }
