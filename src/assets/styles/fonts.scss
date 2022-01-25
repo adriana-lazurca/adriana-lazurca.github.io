@@ -1,0 +1,25 @@
+@import "variables/text-size.scss";
+
+.text-sm {
+    font-size: $text-sm;
+}
+
+.text-md {
+    font-size: $text-md;
+}
+
+.text-lg {
+    font-size: $text-lg;
+}
+
+.text-xl {
+    font-size: $text-xl;
+}
+
+.text-2xl {
+    font-size: $text-2xl;
+}
+
+.text-3xl {
+    font-size: $text-3xl;
+}
