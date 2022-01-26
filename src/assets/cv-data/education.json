@@ -1,0 +1,83 @@
+[
+   {
+      "id": 1,
+      "institution": {
+         "name": "BeCode",
+         "city": "Brussels"
+      },
+      "startDate": "2021-01-01",
+      "endDate": "2021-07-31",
+      "type": "Web Development - Apprenticeship",
+      "proficiencies": [
+         {
+            "type": "front-end",
+            "technologies": ["html", "css", "bootstrap", "javascript", "react", "redux", "vue"]
+         },
+         {
+            "type": "back-end",
+            "technologies": ["php", "laravel"]
+         },
+         {
+            "type": "back-end",
+            "technologies": ["php", "laravel"]
+         },
+         {
+            "type": "database",
+            "technologies": ["mysql"]
+         },
+         {
+            "type": "database",
+            "versioningSystem": ["git"]
+         }
+      ]
+   },
+   {
+      "id": 2,
+      "institution": {
+         "name": "„Alexandru Ioan Cuza” University",
+         "city": "Iasi"
+      },
+      "startDate": "2011-10-01",
+      "endDate": "2013-07-31",
+      "type": "Master in Children's Rights",
+      "proficiencies": []
+   },
+   {
+      "id": 3,
+      "institution": {
+         "name": "„Alexandru Ioan Cuza” University",
+         "city": "Iasi"
+      },
+      "startDate": "2008-10-01",
+      "endDate": "2011-07-31",
+      "type": "Bachelor's Degree in Social Work",
+      "proficiencies": []
+   },
+   {
+      "id": 4,
+      "institution": {
+         "name": "Adults Qualification Center",
+         "city": "Iasi"
+      },
+      "startDate": "2012-01-01",
+      "endDate": "2012-03-31",
+      "type": "Basic Accounting",
+      "proficiencies": []
+   },
+   {
+      "id": 5,
+      "institution": {
+         "name": "Ecdl Romania",
+         "city": "Suceava"
+      },
+      "startDate": "2008-01-01",
+      "endDate": "2008-12-31",
+      "type": "European Computer Driving Licence Core",
+      "proficiencies": [
+         {
+            "type": "ms office",
+            "technologies": ["word", "power point", "excel", "access", "outlook"]
+         }
+      ]
+   }
+]
