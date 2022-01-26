@@ -1,7 +1,7 @@
 import { Job } from '../job';
 import './timeline.scss';
 
-export const Timeline = () => {
+export const Timeline = (props) => {
    return (
       <div className='timeline'>
          <div className='timeline__card timeline__card--left'>

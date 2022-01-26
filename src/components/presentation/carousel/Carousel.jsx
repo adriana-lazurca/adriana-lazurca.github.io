@@ -1,19 +1,20 @@
-import './carousel.scss';
+import { useState } from 'react';
+
 import { About } from '../about';
 import { Skills } from '../skills';
 import { Languages } from '../languages';
-import { useState } from 'react';
-
-const personalInfo = {
-   about: <About />,
-   skills: <Skills />,
-   languages: <Languages />,
-};
+import './carousel.scss';
 
 const infoOptions = ['about', 'skills', 'languages'];
 
-export const Carousel = () => {
+export const Carousel = (props) => {
+   const { personalInfo, jobs, education } = props;
+
    const [selectedInfo, setselectedInfo] = useState('about');
+
+   const showAbout = selectedInfo === 'about';
+   const showSkills = selectedInfo === 'skills';
+   const showLanguages = selectedInfo === 'languages';
 
    const toggleNext = () => {
       const currentIndex = infoOptions.indexOf(selectedInfo);
@@ -35,7 +36,9 @@ export const Carousel = () => {
       <div className='carousel'>
          <div className='carousel__card'>
             <div className='carousel__card-content'>
-               {personalInfo[selectedInfo]}
+               {showAbout && <About personalInfo={personalInfo}/>}
+               {showSkills && <Skills />}
+               {showLanguages && <Languages personalInfo={personalInfo}/>}
                <a className='carousel__prev' onClick={togglePrev}>
                   &lt;
                </a>

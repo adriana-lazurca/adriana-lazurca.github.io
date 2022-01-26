@@ -1,6 +1,5 @@
-import personalInfo from '../../../local-json/personal-info.json';
-
-export const About = () => {
+export const About = (props) => {
+   const { personalInfo } = props;
    return (
       <>
          <p>{personalInfo && personalInfo.about}</p>
