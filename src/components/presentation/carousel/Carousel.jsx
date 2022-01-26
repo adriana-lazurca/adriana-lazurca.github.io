@@ -15,43 +15,33 @@ const infoOptions = ['about', 'skills', 'languages'];
 export const Carousel = () => {
    const [selectedInfo, setselectedInfo] = useState('about');
 
-   const togglePrev = () => {
-      const currentIndex = infoOptions.indexOf(selectedInfo);
-      const nextIndex = currentIndex === 0 ? currentIndex : currentIndex - 1;
-      const newSelectedInfo = infoOptions[nextIndex];
-
-      setselectedInfo(newSelectedInfo);
-   };
-
    const toggleNext = () => {
       const currentIndex = infoOptions.indexOf(selectedInfo);
-      const nextIndex = currentIndex === infoOptions.length - 1 ? currentIndex : currentIndex + 1;
+      const nextIndex = currentIndex === infoOptions.length - 1 ? 0 : currentIndex + 1;
       const newSelectedInfo = infoOptions[nextIndex];
 
       setselectedInfo(newSelectedInfo);
    };
 
-   const showAbout = selectedInfo === 'about';
-   const showSkills = selectedInfo === 'skills';
-   const showLanguages = selectedInfo === 'languages';
+   const togglePrev = () => {
+      const currentIndex = infoOptions.indexOf(selectedInfo);
+      const nextIndex = currentIndex === 0 ? infoOptions.length - 1 : currentIndex - 1;
+      const newSelectedInfo = infoOptions[nextIndex];
+
+      setselectedInfo(newSelectedInfo);
+   };
 
    return (
       <div className='carousel'>
          <div className='carousel__card'>
             <div className='carousel__card-content'>
-               {/* {showAbout && <About />}
-               {showSkills && <Skills />}
-               {showLanguages && <Languages />} */}
-
                {personalInfo[selectedInfo]}
-
                <a className='carousel__prev' onClick={togglePrev}>
                   &lt;
                </a>
                <a className='carousel__next' onClick={toggleNext}>
                   &gt;
                </a>
-               {/* <p>{showedComponent}</p> */}
             </div>
 
             <div className='carousel__card-list'>
