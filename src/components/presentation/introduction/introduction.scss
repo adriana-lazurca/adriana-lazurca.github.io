@@ -1,9 +1,9 @@
-@import "../../assets/styles/variables/colors";
-@import "../../assets/styles/variables/breakpoints";
-@import "../../assets/styles/variables/text-size";
+@import "../../../assets/styles/variables/colors";
+@import "../../../assets/styles/variables/breakpoints";
+@import "../../../assets/styles/variables/text-size";
 
-.presentation {
-    grid-area: presentation;
+.introduction {
+    grid-area: introduction;
     grid-row: 1 / 2;
 
     &__img {
