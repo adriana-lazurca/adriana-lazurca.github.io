@@ -8,7 +8,7 @@ import './carousel.scss';
 const infoOptions = ['about', 'skills', 'languages'];
 
 export const Carousel = (props) => {
-   const { personalInfo} = props;
+   const { personalInfo } = props;
 
    const [selectedInfo, setselectedInfo] = useState('about');
 
@@ -36,9 +36,9 @@ export const Carousel = (props) => {
       <div className='carousel'>
          <div className='carousel__card'>
             <div className='carousel__card-content'>
-               {showAbout && <About personalInfo={personalInfo}/>}
-               {showSkills && <Skills personalInfo={personalInfo}/>}
-               {showLanguages && <Languages personalInfo={personalInfo}/>}
+               {showAbout && <About personalInfo={personalInfo} />}
+               {showSkills && <Skills personalInfo={personalInfo} />}
+               {showLanguages && <Languages personalInfo={personalInfo} />}
                <a className='carousel__prev' onClick={togglePrev}>
                   &lt;
                </a>
@@ -47,13 +47,28 @@ export const Carousel = (props) => {
                </a>
             </div>
 
-            <div className='carousel__card-list'>
+            <div className='carousel__card-buttons'>
                <ul>
-                  <li onClick={() => setselectedInfo('about')}>About</li>
+                  <li
+                     className={`button ${showAbout ? 'button--active' : 'button--inactive'}`}
+                     onClick={() => setselectedInfo('about')}
+                  >
+                     About
+                  </li>
 
-                  <li onClick={() => setselectedInfo('skills')}>Skills</li>
+                  <li
+                     className={`button ${showSkills ? 'button--active' : 'button--inactive'}`}
+                     onClick={() => setselectedInfo('skills')}
+                  >
+                     Skills
+                  </li>
 
-                  <li onClick={() => setselectedInfo('languages')}>Languages</li>
+                  <li
+                     className={`button ${showLanguages ? 'button--active' : 'button--inactive'}`}
+                     onClick={() => setselectedInfo('languages')}
+                  >
+                     Languages
+                  </li>
                </ul>
             </div>
          </div>

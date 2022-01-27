@@ -39,7 +39,7 @@
         right: 3%;
     }
 
-    &__card-list {
+    &__card-buttons {
         flex: 0 1 auto;
         width: 100%;
         display: flex;
@@ -52,13 +52,19 @@
             padding: 0;
         }
 
-        li {
+        .button {
             display: inline;
             padding: 0.3em;
             margin: 0 5px;
             border-radius: 20%;
-            background-color: rgb(81, 100, 141);
             cursor: pointer;
+        }
+
+        .button--inactive {
+            background-color: rgb(81, 100, 141);
+        }
+        .button--active {
+            background-color: rgb(138, 142, 150);
         }
     }
 }
