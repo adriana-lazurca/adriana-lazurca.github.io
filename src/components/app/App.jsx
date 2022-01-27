@@ -9,8 +9,8 @@ export const App = () => {
    return (
       <div className='app'>
          <div className='app__content'>
-            <Home jobs={jobs} education={education} />
-            <Timeline jobs={jobs} education={education}/>
+            <Home />
+            <Timeline jobs={jobs} education={education} />
          </div>
          <Navigation />
       </div>

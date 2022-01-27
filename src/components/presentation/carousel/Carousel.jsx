@@ -8,7 +8,7 @@ import './carousel.scss';
 const infoOptions = ['about', 'skills', 'languages'];
 
 export const Carousel = (props) => {
-   const { personalInfo, jobs, education } = props;
+   const { personalInfo} = props;
 
    const [selectedInfo, setselectedInfo] = useState('about');
 
@@ -37,7 +37,7 @@ export const Carousel = (props) => {
          <div className='carousel__card'>
             <div className='carousel__card-content'>
                {showAbout && <About personalInfo={personalInfo}/>}
-               {showSkills && <Skills />}
+               {showSkills && <Skills personalInfo={personalInfo}/>}
                {showLanguages && <Languages personalInfo={personalInfo}/>}
                <a className='carousel__prev' onClick={togglePrev}>
                   &lt;
