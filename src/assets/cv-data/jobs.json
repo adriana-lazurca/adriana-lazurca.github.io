@@ -15,7 +15,7 @@
          "Managed tasks with Jira reporting tool",
          "Learned how to work with the Agile methodology"
       ],
-      "technologies": ["html", "css", "javascript", "jira", "git", "react", "redux"],
+      "technologies": ["html", "css", "javascript", "react", "redux", "apexcharts", "jira", "git", "bitbucket"],
       "description": "The application developed at Climact can be found at: https://pathwaysexplorer.climact.com"
    },
    {

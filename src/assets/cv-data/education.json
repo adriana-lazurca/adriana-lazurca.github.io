@@ -8,27 +8,18 @@
       "startDate": "2021-01-01",
       "endDate": "2021-07-31",
       "type": "Web Development - Apprenticeship",
-      "proficiencies": [
-         {
-            "type": "front-end",
-            "technologies": ["html", "css", "bootstrap", "javascript", "react", "redux", "vue"]
-         },
-         {
-            "type": "back-end",
-            "technologies": ["php", "laravel"]
-         },
-         {
-            "type": "back-end",
-            "technologies": ["php", "laravel"]
-         },
-         {
-            "type": "database",
-            "technologies": ["mysql"]
-         },
-         {
-            "type": "database",
-            "versioningSystem": ["git"]
-         }
+      "technologies": [
+         "html",
+         "css",
+         "bootstrap",
+         "javascript",
+         "react",
+         "redux",
+         "vue",
+         "php",
+         "laravel",
+         "mysql",
+         "git"
       ]
    },
    {
@@ -40,7 +31,7 @@
       "startDate": "2011-10-01",
       "endDate": "2013-07-31",
       "type": "Master in Children's Rights",
-      "proficiencies": []
+      "technologies": []
    },
    {
       "id": 3,
@@ -51,7 +42,7 @@
       "startDate": "2008-10-01",
       "endDate": "2011-07-31",
       "type": "Bachelor's Degree in Social Work",
-      "proficiencies": []
+      "technologies": []
    },
    {
       "id": 4,
@@ -62,7 +53,7 @@
       "startDate": "2012-01-01",
       "endDate": "2012-03-31",
       "type": "Basic Accounting",
-      "proficiencies": []
+      "technologies": []
    },
    {
       "id": 5,
@@ -73,11 +64,6 @@
       "startDate": "2008-01-01",
       "endDate": "2008-12-31",
       "type": "European Computer Driving Licence Core",
-      "proficiencies": [
-         {
-            "type": "ms office",
-            "technologies": ["word", "power point", "excel", "access", "outlook"]
-         }
-      ]
+      "technologies": ["word", "power point", "excel", "access", "outlook"]
    }
 ]

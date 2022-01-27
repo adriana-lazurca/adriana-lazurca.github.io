@@ -10,6 +10,32 @@
    "mobile": 465448696,
    "jobTitle": "Front-End Developer",
    "about": "About me: I'm Adriana Lazurca Correia from Romania! I'm Adriana Lazurca Correia from Romania! I'm Adriana Lazurca Correia from Romania!I'm Adriana Lazurca Correia from Romania!",
+   "proficiencies": [
+      {
+         "type": "front-end",
+         "technologies": ["html", "css", "bootstrap", "javascript", "react", "redux", "vue"]
+      },
+      {
+         "type": "back-end",
+         "technologies": ["php", "laravel"]
+      },
+      {
+         "type": "database",
+         "technologies": ["mysql"]
+      },
+      {
+         "type": "versioning system",
+         "technologies": ["git"]
+      },
+      {
+         "type": "project management",
+         "technologies": ["jira"]
+      },
+      {
+         "type": "hosting platforms",
+         "technologies": ["github", "Bitbucket "]
+      }
+   ],
    "languages": [
       {
          "name": "romanian",
