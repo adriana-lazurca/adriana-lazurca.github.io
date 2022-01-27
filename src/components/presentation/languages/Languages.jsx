@@ -6,7 +6,10 @@ export const Languages = (props) => {
       <>
          <p>Languages</p>
          <ul>
-            {personalInfo && personalInfo.languages.map((language) => <li>{`${language.name} - ${language.level}`}</li>)}
+            {personalInfo &&
+               personalInfo.languages.map((language) => (
+                  <li key={language.name}>{`${language.name} - ${language.level}`}</li>
+               ))}
          </ul>
       </>
    );
