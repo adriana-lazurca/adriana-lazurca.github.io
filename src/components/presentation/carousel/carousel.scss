@@ -58,13 +58,13 @@
             margin: 0 5px;
             border-radius: 20%;
             cursor: pointer;
-        }
 
-        .button--inactive {
-            background-color: rgb(81, 100, 141);
-        }
-        .button--active {
-            background-color: rgb(138, 142, 150);
+            &--inactive {
+                background-color: rgb(81, 100, 141);
+            }
+            &--active {
+                background-color: rgb(138, 142, 150);
+            }
         }
     }
 }
