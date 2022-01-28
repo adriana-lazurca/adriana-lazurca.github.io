@@ -1,49 +1,43 @@
+import { useState } from 'react';
+
 import { Job } from '../job';
+import { Education } from '../education';
+
 import './timeline.scss';
 
 export const Timeline = (props) => {
+   const { jobs, education } = props;
+
+   const [cardPosition, setCardPosition] = useState('left');
+
    return (
       <div className='timeline'>
-         <div className='timeline__card timeline__card--left'>
-            <div className='timeline__card-content'>
-               <h2>INTERN FRONT-END</h2>
-               <p>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea
-                  mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                  primis ea eam.
-               </p>
-            </div>
-         </div>
-         <div className='timeline__card timeline__card--right'>
-            <div className='timeline__card-content'>
-               <h2>INTERN FRONT-END</h2>
-               <p>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea
-                  mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                  primis ea eam.
-               </p>
-            </div>
-         </div>
-         <div className='timeline__card timeline__card--left'>
-            <div className='timeline__card-content'>
-               <h2>INTERN FRONT-END</h2>
-               <p>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea
-                  mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                  primis ea eam.
-               </p>
-            </div>
-         </div>
-         <div className='timeline__card timeline__card--right'>
-            <div className='timeline__card-content'>
-               <h2>INTERN FRONT-END</h2>
-               <p>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea
-                  mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                  primis ea eam.
-               </p>
-            </div>
-         </div>
+         {jobs &&
+            jobs.map((job) => (
+               <div
+                  key={job.id}
+                  className={`timeline__card ${
+                     cardPosition === 'left' ? 'timeline__card--left' : 'timeline__card--right'
+                  }`}
+               >
+                  <div className='timeline__card-content'>
+                     <Job job={job} />
+                  </div>
+               </div>
+            ))}
+         {education &&
+            education.map((education) => (
+               <div
+                  key={education.id}
+                  className={`timeline__card ${
+                     cardPosition === 'left' ? 'timeline__card--left' : 'timeline__card--right'
+                  }`}
+               >
+                  <div className='timeline__card-content'>
+                     <Education education={education} />
+                  </div>
+               </div>
+            ))}
       </div>
    );
 };
