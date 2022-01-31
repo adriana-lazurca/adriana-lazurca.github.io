@@ -9,7 +9,7 @@ export const App = () => {
    return (
       <div className='app'>
          <div className='app__content'>
-            <Home />
+            <Home jobs={jobs} education={education}/>
             <Timeline jobs={jobs} education={education} />
          </div>
          <Navigation />
