@@ -15,7 +15,28 @@
          "Managed tasks with Jira reporting tool",
          "Learned how to work with the Agile methodology"
       ],
-      "technologies": ["html", "css", "javascript", "react", "redux", "apexcharts", "jira", "git", "bitbucket"],
+      "proficiencies": [
+         {
+            "type": "front-end",
+            "technologies": ["html", "css", "javascript", "react", "redux", "vue"]
+         },
+         {
+            "type": "versioning system",
+            "technologies": ["git"]
+         },
+         {
+            "type": "project management",
+            "technologies": ["jira"]
+         },
+         {
+            "type": "hosting platforms",
+            "technologies": ["bitbucket"]
+         },
+         {
+            "type": "other",
+            "technologies": ["apex charts"]
+         }
+      ],
       "description": "The application developed at Climact can be found at: https://pathwaysexplorer.climact.com"
    },
    {
@@ -31,7 +52,12 @@
          "Became familiarized with SQL database and queries, used for retrieving and manipulating data",
          "Obtained better attention to details and time management, while making sure to maintain data quality and high productivity"
       ],
-      "technologies": ["sql", "siebel", "excel"],
+      "proficiencies": [
+         {
+            "type": "other",
+            "technologies": ["siebel", "excel", "sql"]
+         }
+      ],
       "description": ""
    },
    {
@@ -46,7 +72,7 @@
       "tasks": [
          "Improved analytical sensitivity by evaluating and rating relevant online media channels (Blogs, eCommerce, Forum, Micro Blogs, News, Social Nets, Video and Web)"
       ],
-      "technologies": [],
+      "proficiencies": [],
       "description": ""
    },
    {
@@ -62,7 +88,7 @@
          "Performed quality check to increase the effectiveness and efficiency of the database and trained new employees",
          "Developed collaboration skills and contributed to team efforts to deliver expected results"
       ],
-      "technologies": [],
+      "proficiencies": [],
       "description": ""
    }
 ]
