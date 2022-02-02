@@ -1,6 +1,5 @@
 [
    {
-      "id": 5,
       "institution": {
          "name": "BeCode",
          "city": "Brussels"
@@ -32,7 +31,6 @@
       ]
    },
    {
-      "id": 4,
       "institution": {
          "name": "„Alexandru Ioan Cuza” University",
          "city": "Iasi"
@@ -43,7 +41,6 @@
       "skills": []
    },
    {
-      "id": 3,
       "institution": {
          "name": "„Alexandru Ioan Cuza” University",
          "city": "Iasi"
@@ -54,7 +51,6 @@
       "skills": []
    },
    {
-      "id": 2,
       "institution": {
          "name": "Adults Qualification Center",
          "city": "Iasi"
@@ -65,7 +61,6 @@
       "skills": []
    },
    {
-      "id": 1,
       "institution": {
          "name": "Ecdl Romania",
          "city": "Suceava"
