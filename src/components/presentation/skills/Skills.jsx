@@ -3,18 +3,31 @@ import './skills.scss';
 export const Skills = (props) => {
    const { jobs, education } = props;
 
-   const jobTechnologies = jobs.map((job) => job.proficiencies);
-   const educationTechnologies = education.map((education) => education.proficiencies);
+   const jobSkills = jobs.map((job) => job.skills);
+   const educationSkills = education.map((education) => education.skills);
 
-   const allTechnologies = [].concat(...jobTechnologies, ...educationTechnologies);
-   console.log('allProficencies', allTechnologies);
+   const allSkills = [].concat(...jobSkills, ...educationSkills);
+
+   const groupedSkills = [];
+
+   allSkills.forEach((skill) => {
+      const matchedSkill = groupedSkills.find((element) => element.type === skill.type);
+
+      if (!matchedSkill) {
+         groupedSkills.push(skill);
+         return;
+      }
+
+      const technologies = matchedSkill.technologies.concat(skill.technologies);
+      matchedSkill.technologies = [...new Set(technologies)];
+   });
 
    return (
-      <>
-         <p>Skills</p>
-         {allTechnologies &&
-            allTechnologies.map((skill, index) => <p key={index}>{`${skill.type} : ${skill.technologies}`}</p>)}
-      </>
-      //todo: replace index
+      <div>
+         {groupedSkills &&
+            groupedSkills.map((skill, index) => (
+               <p key={`skill-${skill.type}-${index}`}>{`${skill.type} : ${skill.technologies}`}</p>
+            ))}
+      </div>
    );
 };
