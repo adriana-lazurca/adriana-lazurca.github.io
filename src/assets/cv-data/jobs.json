@@ -17,7 +17,7 @@
       "skills": [
          {
             "type": "front-end",
-            "technologies": ["html", "css", "javascript", "react", "redux", "vue"]
+            "technologies": ["html", "css", "javascript", "react", "redux"]
          },
          {
             "type": "versioning system",
