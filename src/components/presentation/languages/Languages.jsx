@@ -5,7 +5,6 @@ export const Languages = (props) => {
    const { personalInfo } = props;
    return (
       <Fragment>
-         <p>Languages</p>
          <ul>
             {personalInfo &&
                personalInfo.languages.map((language, index) => (
