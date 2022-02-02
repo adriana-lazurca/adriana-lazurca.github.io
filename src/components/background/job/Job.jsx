@@ -9,7 +9,7 @@ export const Job = (props) => {
             <h2>{job.title}</h2>
             <ul>
                {job.tasks.map((task, index) => (
-                  <li key={index}>{task}</li>//todo: replace index
+                  <li key={`job-${job.company.name}-${index}`}>{task}</li>
                ))}
             </ul>
          </>

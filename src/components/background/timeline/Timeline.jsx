@@ -13,9 +13,9 @@ export const Timeline = (props) => {
    return (
       <div className='timeline'>
          {jobs &&
-            jobs.map((job) => (
+            jobs.map((job, index) => (
                <div
-                  key={job.id}
+                  key={`job-${job.title}-${index}`}
                   className={`timeline__card ${
                      cardPosition === 'left' ? 'timeline__card--left' : 'timeline__card--right'
                   }`}
@@ -26,9 +26,9 @@ export const Timeline = (props) => {
                </div>
             ))}
          {education &&
-            education.map((education) => (
+            education.map((education, index) => (
                <div
-                  key={education.id}
+                  key={`job-${education.type}-${index}`}
                   className={`timeline__card ${
                      cardPosition === 'left' ? 'timeline__card--left' : 'timeline__card--right'
                   }`}
