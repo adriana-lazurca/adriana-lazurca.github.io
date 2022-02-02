@@ -15,7 +15,7 @@
          "Managed tasks with Jira reporting tool",
          "Learned how to work with the Agile methodology"
       ],
-      "proficiencies": [
+      "skills": [
          {
             "type": "front-end",
             "technologies": ["html", "css", "javascript", "react", "redux", "vue"]
@@ -52,7 +52,7 @@
          "Became familiarized with SQL database and queries, used for retrieving and manipulating data",
          "Obtained better attention to details and time management, while making sure to maintain data quality and high productivity"
       ],
-      "proficiencies": [
+      "skills": [
          {
             "type": "other",
             "technologies": ["siebel", "excel", "sql"]
@@ -72,7 +72,7 @@
       "tasks": [
          "Improved analytical sensitivity by evaluating and rating relevant online media channels (Blogs, eCommerce, Forum, Micro Blogs, News, Social Nets, Video and Web)"
       ],
-      "proficiencies": [],
+      "skills": [],
       "description": ""
    },
    {
@@ -88,7 +88,7 @@
          "Performed quality check to increase the effectiveness and efficiency of the database and trained new employees",
          "Developed collaboration skills and contributed to team efforts to deliver expected results"
       ],
-      "proficiencies": [],
+      "skills": [],
       "description": ""
    }
 ]

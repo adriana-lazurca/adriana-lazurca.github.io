@@ -8,7 +8,7 @@
       "startDate": "2021-01-01",
       "endDate": "2021-07-31",
       "type": "Web Development - Apprenticeship",
-      "proficiencies": [
+      "skills": [
          {
             "type": "front-end",
             "technologies": ["html", "css", "bootstrap", "javascript", "vue"]
@@ -40,7 +40,7 @@
       "startDate": "2011-10-01",
       "endDate": "2013-07-31",
       "type": "Master in Children's Rights",
-      "proficiencies": []
+      "skills": []
    },
    {
       "id": 3,
@@ -51,7 +51,7 @@
       "startDate": "2008-10-01",
       "endDate": "2011-07-31",
       "type": "Bachelor's Degree in Social Work",
-      "proficiencies": []
+      "skills": []
    },
    {
       "id": 2,
@@ -62,7 +62,7 @@
       "startDate": "2012-01-01",
       "endDate": "2012-03-31",
       "type": "Basic Accounting",
-      "proficiencies": []
+      "skills": []
    },
    {
       "id": 1,
@@ -73,7 +73,7 @@
       "startDate": "2008-01-01",
       "endDate": "2008-12-31",
       "type": "European Computer Driving Licence Core",
-      "proficiencies": [
+      "skills": [
          {
             "type": "other",
             "technologies": ["word", "power point", "excel", "access", "outlook"]
