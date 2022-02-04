@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import { About } from '../about';
-import { Skills } from '../skills';
-import { Languages } from '../languages';
+import { About } from './about';
+import { Skills } from './skills';
+import { Languages } from './languages';
 import './carousel.scss';
 
 const infoOptions = ['about', 'skills', 'languages'];
