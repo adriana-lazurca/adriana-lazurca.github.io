@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import { Job } from '../job';
-import { Education } from '../education';
+import { Job } from './job';
+import { Education } from './education';
 
 import './timeline.scss';
 
