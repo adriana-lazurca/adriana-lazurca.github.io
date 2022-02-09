@@ -1,6 +1,6 @@
 import education from '../assets/cv-data/education.json';
 import jobs from '../assets/cv-data/jobs.json';
-import { Timeline } from './background/timeline';
+import { Timeline } from './timeline';
 import { Presentation } from './presentation/index';
 import { Navigation } from './navigation';
 import './app.scss';
