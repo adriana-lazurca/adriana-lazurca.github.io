@@ -1,6 +1,13 @@
-ul {
-    padding: 0;
-    li {
-        list-style-type: none;
+.language {
+    display: flex;
+    gap: 50px 30px;
+    align-items: center;
+
+    &__name {
+        border: 3px solid black;
+        border-radius: 30px;
+        padding: 0.2rem;
     }
 }
+
+//todo: display languages differently on large screens
