@@ -1,4 +1,5 @@
 @import "../../../assets/styles/variables/breakpoints";
+@import "../../../assets/styles/variables/colors";
 
 .carousel {
     grid-area: carousel;
@@ -18,7 +19,7 @@
         gap: 16px;
         position: relative;
         padding: 1em 3em;
-        background-color: rgb(127, 167, 212);
+        background-color: $primayBlue;
         font-family: cursive;
 
         p {
@@ -47,7 +48,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgb(52, 24, 180);
+        background-color: $darkBlue;
 
         ul {
             list-style-type: none;
@@ -62,10 +63,10 @@
             cursor: pointer;
 
             &--inactive {
-                background-color: rgb(81, 100, 141);
+                background-color: $primayBlue;
             }
             &--active {
-                background-color: rgb(138, 142, 150);
+                background-color: $lightBlue;
             }
         }
     }
