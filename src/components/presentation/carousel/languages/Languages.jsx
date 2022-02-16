@@ -1,18 +1,40 @@
-import { Fragment } from 'react';
-
+import { useEffect } from 'react';
 import './languages.scss';
 
 export const Languages = (props) => {
    const { personalInfo } = props;
+
+   const getLevel = (level) => {
+      let value = 0;
+
+      switch (level) {
+         case 'elementary':
+            value = '20%';
+            break;
+         case 'fluent':
+            value = '80%';
+            break;
+         default:
+            value = '100%';
+      }
+
+      return value;
+   };
+
    return (
-      <Fragment>
+      <div className='container'>
          {personalInfo &&
             personalInfo.languages.map((language, index) => (
-               <div key={`language-${language.name}-${index}`} className='language'>
-                  <p className='language__name'>{language.name}</p>
-                  <span>{` ${language.level}`}</span>
+               <div key={`language-${language.name}-${index}`} className='container__language'>
+                  <div className='container__language-description'>
+                     <p className='language__name'>{language.name.toUpperCase()}</p>
+                     <p>{` ${language.level}`}</p>
+                  </div>
+                  <div className='container__language-bar'>
+                     <div className='language-bar__filler' style={{ width: getLevel(language.level) }}></div>
+                  </div>
                </div>
             ))}
-      </Fragment>
+      </div>
    );
 };
