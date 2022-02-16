@@ -39,12 +39,12 @@ export const Carousel = (props) => {
                {showAbout && <About personalInfo={personalInfo} />}
                {showSkills && <Skills jobs={jobs} education={education} />}
                {showLanguages && <Languages personalInfo={personalInfo} />}
-               <a className='carousel__prev' onClick={togglePrev}>
+               <button className='carousel__prev' onClick={togglePrev}>
                   &lt;
-               </a>
-               <a className='carousel__next' onClick={toggleNext}>
+               </button>
+               <button className='carousel__next' onClick={toggleNext}>
                   &gt;
-               </a>
+               </button>
             </div>
 
             <div className='carousel__card-buttons'>

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Linkk } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import education from '../assets/cv-data/education.json';
 import jobs from '../assets/cv-data/jobs.json';

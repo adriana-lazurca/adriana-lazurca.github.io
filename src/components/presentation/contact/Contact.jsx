@@ -18,14 +18,14 @@ export const Contact = () => {
          <ReactTooltip place='bottom' />
          <ul className='contact__list'>
             <li>
-               <a href='https://www.github.com/adriana-lazurca' target='_blank'>
+               <a href='https://www.github.com/adriana-lazurca' target='_blank' rel="noreferrer">
                   {' '}
                   <AiOutlineGithub color='black' data-tip='adriana-lazurca' />
                   {/* <ReactTooltip place='bottom' /> */}
                </a>
             </li>
             <li>
-               <a href='https://www.linkedin.com/in/adriana-lazurca' target='_blank'>
+               <a href='https://www.linkedin.com/in/adriana-lazurca' target='_blank' rel="noreferrer">
                   <AiOutlineLinkedin color='black' data-tip='adriana-lazurca' />
                </a>
                {/* <ReactTooltip place='bottom' /> */}

@@ -13,10 +13,6 @@
 
     &__card-content {
         flex: 1 1 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
         position: relative;
         padding: 1em 3em;
         background-color: $primayBlue;
@@ -30,7 +26,7 @@
     &__prev,
     &__next {
         position: absolute;
-        top: 50%;
+        top: 45%;
         cursor: pointer;
     }
 
