@@ -1,7 +1,9 @@
+@import "../../assets/styles/variables/colors";
+
 .navigation {
     height: 7%;
     width: 100%;
-    background-color: #7fa7d4;
+    background-color: $darkBlue;
     color: white;
 
     ul {

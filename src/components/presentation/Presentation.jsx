@@ -6,7 +6,7 @@ export const Presentation = (props) => {
    const { jobs, education } = props;
 
    return (
-      <div className='presentation'>
+      <div className='presentation' id="home">
          <Introduction personalInfo={personalInfo} />
          <Carousel personalInfo={personalInfo} jobs={jobs} education={education} />
          <Contact />

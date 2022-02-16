@@ -16,6 +16,7 @@ export const Timeline = (props) => {
             jobs.map((job, index) => (
                <div
                   key={`job-${job.title}-${index}`}
+                  id='experience'
                   className={`timeline__card ${
                      cardPosition === 'left' ? 'timeline__card--left' : 'timeline__card--right'
                   }`}
@@ -29,6 +30,7 @@ export const Timeline = (props) => {
             education.map((education, index) => (
                <div
                   key={`job-${education.type}-${index}`}
+                  id='education'
                   className={`timeline__card ${
                      cardPosition === 'left' ? 'timeline__card--left' : 'timeline__card--right'
                   }`}
