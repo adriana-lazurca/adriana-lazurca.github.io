@@ -18,6 +18,10 @@
         background-color: $primayBlue;
         font-family: cursive;
 
+        & > div{
+            max-width: 90%;
+            margin: auto;
+        }
         p {
             margin: auto;
         }

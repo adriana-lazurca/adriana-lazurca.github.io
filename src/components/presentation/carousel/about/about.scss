@@ -1,0 +1,10 @@
+.description {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+
+    &__greeting {
+        padding: 1em 0 ;
+    }
+}

@@ -1,9 +1,11 @@
+import './about.scss'
+
 export const About = (props) => {
    const { personalInfo } = props;
    return (
-      <>
-         <p>Hello!</p>
-         <p>{personalInfo && personalInfo.about}</p>
-      </>
+      <div className='description'>
+         <span className='description__greeting'>Hello!</span>
+         <p className='description__text'>{personalInfo && personalInfo.about}</p>
+      </div>
    );
 };
