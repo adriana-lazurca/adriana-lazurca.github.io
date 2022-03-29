@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import './languages.scss';
 
 export const Languages = (props) => {
