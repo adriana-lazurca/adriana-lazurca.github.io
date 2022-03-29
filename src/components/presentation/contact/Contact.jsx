@@ -4,12 +4,27 @@ import ReactTooltip from 'react-tooltip';
 
 import './contact.scss';
 
-// todo - refactor using the following structure; no hardcoded stuff
 const contactItems = [
    {
+      icon: <AiOutlineGithub />,
       url: 'https://www.github.com/adriana-lazurca',
-      tooltip: 'adriana-lazurca'
-   }
+      tooltip: 'adriana-lazurca',
+   },
+   {
+      icon: <AiOutlineLinkedin />,
+      url: 'https://www.linkedin.com/in/adriana-lazurca',
+      tooltip: 'adriana-lazurca',
+   },
+   {
+      icon: <RiDiscordLine />,
+      url: '',
+      tooltip: 'Adriana Lazurca#5360',
+   },
+   {
+      icon: <AiOutlineMail />,
+      url: '',
+      tooltip: 'adrianar.lazurca@gmail.com',
+   },
 ];
 
 export const Contact = () => {
@@ -17,27 +32,13 @@ export const Contact = () => {
       <div className='contact'>
          <ReactTooltip place='bottom' />
          <ul className='contact__list'>
-            <li>
-               <a href='https://www.github.com/adriana-lazurca' target='_blank' rel="noreferrer">
-                  {' '}
-                  <AiOutlineGithub color='black' data-tip='adriana-lazurca' />
-                  {/* <ReactTooltip place='bottom' /> */}
-               </a>
-            </li>
-            <li>
-               <a href='https://www.linkedin.com/in/adriana-lazurca' target='_blank' rel="noreferrer">
-                  <AiOutlineLinkedin color='black' data-tip='adriana-lazurca' />
-               </a>
-               {/* <ReactTooltip place='bottom' /> */}
-            </li>
-            <li>
-               <RiDiscordLine color='black' data-tip='Adriana Lazurca#5360' />
-               {/* <ReactTooltip place='bottom' /> */}
-            </li>
-            <li>
-               <AiOutlineMail color='black' data-tip='adrianar.lazurca@gmail.com' />
-               {/* <ReactTooltip place='bottom' /> */}
-            </li>
+            {contactItems.map((contactItem, index) => (
+               <li key={`contactItem-${contactItem.icon}-${index}`}>
+                  <a href={contactItem.url} target='_blank' rel='noreferrer' data-tip={contactItem.tooltip}>
+                     {contactItem.icon}
+                  </a>
+               </li>
+            ))}
          </ul>
       </div>
    );
