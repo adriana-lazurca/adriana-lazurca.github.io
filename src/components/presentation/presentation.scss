@@ -3,16 +3,14 @@
 .presentation {
     height: 100%;
     min-height: 500px;
-    min-width: 250px;
+    min-width: 290px;
     display: grid;
-    //gap: 0.3rem;
     grid-template-columns: auto;
-    grid-template-rows: minmax(0, 2fr) minmax(0, 4fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 2fr) minmax(0, 4fr);
 
     grid-template-areas:
         "introduction"
-        "carousel"
-        "contact";
+        "carousel";
 
     & > div {
         background-color: $lightBlue;
@@ -21,4 +19,3 @@
         border: 0.5px solid black;
     }
 }
-

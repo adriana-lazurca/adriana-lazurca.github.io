@@ -20,6 +20,11 @@ export const Navigation = () => (
                Education
             </HashLink>
          </li>
+         <li>
+            <HashLink smooth to='#contact'>
+               Contact
+            </HashLink>
+         </li>
       </ul>
    </div>
 );

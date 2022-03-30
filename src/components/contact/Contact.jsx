@@ -29,7 +29,7 @@ const contactItems = [
 
 export const Contact = () => {
    return (
-      <div className='contact'>
+      <div className='contact' id='contact'>
          <ReactTooltip place='bottom' />
          <ul className='contact__list'>
             {contactItems.map((contactItem, index) => (

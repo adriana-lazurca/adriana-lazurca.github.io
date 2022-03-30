@@ -1,18 +1,17 @@
-@import "../../../assets/styles/variables/breakpoints";
-
+@import "../../assets/styles/variables/breakpoints";
 
 .contact {
-    grid-area: contact;
-    grid-row: 3 / 4;
-    //align-self: center;
-
     &__list {
+        border-top: 2px solid black;
         display: flex;
         align-items: center;
         justify-content: center;
         list-style-type: none;
-        padding: 0;
+        // padding: 0;
+        padding: 1rem;
         font-size: 1.3rem;
+        margin-block-start: 0 !important;
+        margin-block-end: 0 !important;
 
         li {
             display: inline;
@@ -26,7 +25,6 @@
         &__list {
             font-size: 2.3rem;
         }
-        
     }
 }
 
@@ -35,6 +33,5 @@
         &__list {
             font-size: 3.5rem;
         }
-        
     }
 }
