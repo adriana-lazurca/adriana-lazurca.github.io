@@ -9,9 +9,11 @@
 
 .skill {
     text-align: left;
-    p {
+
+    &__name {
         color: #2260a7;
         font-weight: bold;
+        padding-top: 10px;
     }
 }
 
@@ -38,6 +40,24 @@ ul {
     padding: 0;
     li {
         list-style-type: none;
+    }
+}
+
+
+@media screen and (max-width: $bp-xs) {
+    .skills {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr auto;
+        grid-gap: 1px;
+    }
+
+    .icon-wrap {
+        height: 1em;
+        width: 1em;
+        border: none;
+        background-color: #2260a7;
+        position: relative;
     }
 }
 

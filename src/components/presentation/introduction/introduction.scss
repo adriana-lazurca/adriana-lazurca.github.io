@@ -5,6 +5,7 @@
 .introduction {
     grid-area: introduction;
     grid-row: 1 / 2;
+    padding-top: 0.5rem;
 
     &__img {
         height: 60%;

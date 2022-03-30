@@ -39,7 +39,7 @@ export const Skills = () => {
                         <div className='icon'>{<Icon size={20} iconName={skill.icon}/>}</div>
                      </div>
 
-                     {<p>{skill.name}</p>}
+                     {<div className='skill__name'>{skill.name}</div>}
                      <ul>
                         {skill.technologie.map((technology) => (
                            <li key={`technology-${technology}-${index}`}>{technology}</li>
