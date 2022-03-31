@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { TiChevronRightOutline } from 'react-icons/ti';
+import { TiChevronLeftOutline } from 'react-icons/ti';
 
 import { About } from './about';
 import { Skills } from './skills';
@@ -40,10 +42,10 @@ export const Carousel = (props) => {
                {showSkills && <Skills jobs={jobs} education={education} />}
                {showLanguages && <Languages personalInfo={personalInfo} />}
                <button className='carousel__prev' onClick={togglePrev}>
-                  &lt;
+                  <TiChevronLeftOutline />
                </button>
                <button className='carousel__next' onClick={toggleNext}>
-                  &gt;
+                  <TiChevronRightOutline  />
                </button>
             </div>
 
