@@ -1,4 +1,4 @@
-import '../timeline.scss';
+import './timeline-card.scss';
 
 export const TimelineCard = ({ children, index }) => {
    const cardPosition = index % 2 === 0 ? 'left' : 'right';
