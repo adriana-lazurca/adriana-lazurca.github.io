@@ -6,13 +6,15 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: $secondaryBase;
+    color: $text-dark;
 
     /* The timeline(line) */
     &::after {
         content: "";
         position: absolute;
         width: 5px;
-        background-color: $darkBlue;
+        background-color: $primaryDark;
         top: 0;
         bottom: 0;
         left: 50%;

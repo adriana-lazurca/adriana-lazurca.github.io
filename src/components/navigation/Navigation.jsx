@@ -7,22 +7,22 @@ export const Navigation = () => (
       <ul>
          <li>
             <HashLink smooth to='#home' >
-               Home
+               HOME
             </HashLink>
          </li>
          <li>
             <HashLink smooth to='#experience'>
-               Experience
+               EXPERIENCE
             </HashLink>
          </li>
          <li>
             <HashLink smooth to='#education'>
-               Education
+               EDUCATION
             </HashLink>
          </li>
          <li>
             <HashLink smooth to='#contact'>
-               Contact
+               CONTACT
             </HashLink>
          </li>
       </ul>

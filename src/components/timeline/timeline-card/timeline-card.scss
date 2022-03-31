@@ -15,8 +15,8 @@
         width: 25px;
         height: 25px;
         right: -17px;
-        background-color: $darkBlue;
-        border: 4px solid $lightBlue;
+        background-color: $primaryDark;
+        border: 4px solid $primaryLight;
         top: 15px;
         border-radius: 50%;
         z-index: 1;
@@ -35,9 +35,9 @@
             width: 0;
             z-index: 1;
             right: 30px;
-            border: medium solid $darkBlue;
+            border: medium solid $primaryDark;
             border-width: 10px 0 10px 10px;
-            border-color: transparent transparent transparent $darkBlue;
+            border-color: transparent transparent transparent $primaryDark;
         }
     }
 
@@ -54,9 +54,9 @@
             width: 0;
             z-index: 1;
             left: 30px;
-            border: medium solid $darkBlue;
+            border: medium solid $primaryDark;
             border-width: 10px 10px 10px 0;
-            border-color: transparent $darkBlue transparent transparent;
+            border-color: transparent $primaryDark transparent transparent;
         }
 
         /* Fix the circle for containers on the right side */
@@ -66,7 +66,7 @@
     }
     &-content {
         padding: 20px 30px;
-        background-color: $lightBlue;
+        background-color: $primaryLight;
         position: relative;
         border-radius: 6px;
     }
@@ -84,9 +84,9 @@
         /* Make sure that all arrows are pointing leftwards */
         &::before {
             left: 60px;
-            border: medium solid $darkBlue;
+            border: medium solid $primaryDark;
             border-width: 10px 10px 10px 0;
-            border-color: transparent $darkBlue transparent transparent;
+            border-color: transparent $primaryDark transparent transparent;
         }
 
         /* Make all right containers behave like the left ones */
