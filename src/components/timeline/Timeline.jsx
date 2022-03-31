@@ -1,45 +1,24 @@
-import { useState } from 'react';
-
-import { Job } from './job';
-import { Education } from './education';
-
+import { JobCard } from '../cards/job';
+import { EducationCard } from '../cards/education';
+import { TimelineCard } from './timeline-card';
+import { TimelineContainer } from './timeline-container';
 import './timeline.scss';
 
-export const Timeline = (props) => {
-   const { jobs, education } = props;
-
-   const [cardPosition, setCardPosition] = useState('left');
-
+export const Timeline = ({ jobs, education }) => {
    return (
-      <div className='timeline'>
+      <TimelineContainer>
          {jobs &&
             jobs.map((job, index) => (
-               <div
-                  key={`job-${job.title}-${index}`}
-                  id='experience'
-                  className={`timeline__card ${
-                     cardPosition === 'left' ? 'timeline__card--left' : 'timeline__card--right'
-                  }`}
-               >
-                  <div className='timeline__card-content'>
-                     <Job job={job} />
-                  </div>
-               </div>
+               <TimelineCard key={`job-${job.title}-${index}`} index={index}>
+                  <JobCard job={job} />
+               </TimelineCard>
             ))}
          {education &&
             education.map((education, index) => (
-               <div
-                  key={`job-${education.type}-${index}`}
-                  id='education'
-                  className={`timeline__card ${
-                     cardPosition === 'left' ? 'timeline__card--left' : 'timeline__card--right'
-                  }`}
-               >
-                  <div className='timeline__card-content'>
-                     <Education education={education} />
-                  </div>
-               </div>
+               <TimelineCard key={`education-${education.title}-${index}`} index={index}>
+                  <EducationCard education={education} />
+               </TimelineCard>
             ))}
-      </div>
+      </TimelineContainer>
    );
 };

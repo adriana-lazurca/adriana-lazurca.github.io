@@ -1,10 +1,8 @@
 import './job.scss';
 
-export const Job = (props) => {
-   const { job } = props;
-
+export const JobCard = ({ job }) => {
    return (
-      <div className='job'>
+      <div id='experience' className='job'>
          <>
             <h2>{job.title}</h2>
             <ul>
