@@ -3,7 +3,7 @@ import '../timeline.scss';
 
 export const TimelineContainer = ({children}) => {
    return (
-      <div className='timeline'>
+      <div id='experience' className='timeline'>
          {children}
       </div>
    );

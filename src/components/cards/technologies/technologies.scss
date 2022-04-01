@@ -1,0 +1,14 @@
+.technology {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__badge {
+        margin-right: 0.3em;
+        margin-bottom: 0.3em;
+        padding: 0 0.5em;
+        border: 1px solid black;
+        border-radius: 0.25rem;
+        font-weight: bold;
+        font-size: 1em;
+    }
+}
