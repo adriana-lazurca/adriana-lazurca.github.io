@@ -1,9 +1,9 @@
-import { MdOutlineExpandMore } from 'react-icons/md';
+import { MdOutlineExpandMore, MdTaskAlt } from 'react-icons/md';
 import { useState } from 'react';
 
 import { Technologies } from '../technologies';
 import { getDate } from '../utils/getDate';
-import './job.scss';
+import './job-card.scss';
 
 export const JobCard = ({ job }) => {
    const [showMore, setViewMore] = useState(false);
@@ -14,24 +14,25 @@ export const JobCard = ({ job }) => {
    return (
       <div className='job'>
          <h2>{job.title}</h2>
-         <p>
-            {job.company.name} - {job.company.city}
+         <p className='job__company'>
+            <span>{job.company.name}</span> - <span className='opacity'>{job.company.city}</span>
          </p>
          {allTechnologies.length > 0 && <Technologies technologies={allTechnologies} />}
-         <button onClick={() => setViewMore((showMore) => !showMore)}>
+         <button 
+         onClick={() => setViewMore((showMore) => !showMore)}>
             Tasks <MdOutlineExpandMore />
          </button>
          {showMore && (
             <div>
                <ul>
                   {job.tasks.map((task, index) => (
-                     <li key={`job-${job.company.name}-${index}`}>{task}</li>
+                     <li key={`job-${job.company.name}-${index}`} className='job__task'><MdTaskAlt/>{task}</li>
                   ))}
                </ul>
             </div>
          )}
          <footer>
-            <p>
+            <p className='opacity'>
                {getDate(job.startDate)} - {getDate(job.endDate)}
             </p>
          </footer>

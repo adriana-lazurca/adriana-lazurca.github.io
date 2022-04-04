@@ -27,7 +27,6 @@ export const Languages = (props) => {
                <div key={`language-${language.name}-${index}`} className='container__language'>
                   <div className='container__language-description'>
                      <p className='language__name'>{language.name.toUpperCase()}</p>
-                     <p>{` ${language.level}`}</p>
                   </div>
                   <div className='container__language-bar'>
                      <div className='language-bar__filler' style={{ width: getLevel(language.level) }}></div>

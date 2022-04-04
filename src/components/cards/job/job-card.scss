@@ -1,0 +1,31 @@
+@import "../../../assets/styles/variables/colors";
+
+.job {
+    &__task {
+        margin-bottom: 1em;
+    }
+
+    &__company {
+        margin-block-start: 0.5em;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    button {
+        border: none;
+        color: $primaryDarker;
+        background-color: $primaryDark;
+        margin-top: 1em;
+    }
+}
+
+.opacity {
+    opacity: 0.75;
+}
+
+footer {
+    margin-top: 1em;
+    font-size: small;
+}
