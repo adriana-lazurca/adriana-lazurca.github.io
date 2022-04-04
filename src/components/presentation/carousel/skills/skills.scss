@@ -5,6 +5,11 @@
     display: flex;
     gap: 1em;
     justify-content: space-evenly;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 .skill {
@@ -42,7 +47,6 @@ ul {
         list-style-type: none;
     }
 }
-
 
 @media screen and (max-width: $bp-xs) {
     .skills {
