@@ -7,11 +7,10 @@ export const EducationCard = ({ education }) => {
    const allTechnologies = [].concat(...technologies);
 
    return (
-      <div id='education' className='education'>
+      <div className='education'>
          <h2>{education.type}</h2>
          <p className='education__institution'>
-            <span>{education.institution.name}</span> -{' '}
-            <span className='opacity'>{education.institution.city}</span>
+            <span>{education.institution.name}</span> - <span className='opacity'>{education.institution.city}</span>
          </p>
          {allTechnologies.length > 0 && <Technologies technologies={allTechnologies} />}
          <footer>

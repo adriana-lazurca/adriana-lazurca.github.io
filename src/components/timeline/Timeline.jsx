@@ -9,13 +9,17 @@ export const Timeline = ({ jobs, education }) => {
       <TimelineContainer>
          {jobs &&
             jobs.map((job, index) => (
-               <TimelineCard key={`job-${job.title}-${index}`} index={index}>
+               <TimelineCard key={`job-${job.title}-${index}`} index={index} id={index === 0 ? 'experience' : undefined}>
                   <JobCard job={job} />
                </TimelineCard>
             ))}
          {education &&
             education.map((education, index) => (
-               <TimelineCard key={`education-${education.title}-${index}`} index={index}>
+               <TimelineCard
+                  key={`education-${education.title}-${index}`}
+                  index={index}
+                  id={index === 0 ? 'education' : undefined}
+               >
                   <EducationCard education={education} />
                </TimelineCard>
             ))}
