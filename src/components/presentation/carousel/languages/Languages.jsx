@@ -8,10 +8,10 @@ export const Languages = (props) => {
 
       switch (level) {
          case 'elementary':
-            value = '20%';
+            value = '40%';
             break;
          case 'fluent':
-            value = '80%';
+            value = '85%';
             break;
          default:
             value = '100%';
