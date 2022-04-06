@@ -15,7 +15,7 @@ export const App = () => {
             <div className='app__content'>
                <Presentation jobs={jobs} education={education} />
                <Timeline jobs={jobs} education={education} />
-               <Contact/>
+               <Contact />
             </div>
             <Navigation />
          </div>
