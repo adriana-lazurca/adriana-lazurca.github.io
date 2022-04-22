@@ -9,3 +9,20 @@ $primaryLight: #c2eafc;
 $secondaryBase: #eceff1;
 $secondaryDark: #a5a7a8;
 $secondaryLight: #eff2f3;
+
+$colors: (
+    primary: (
+        lighter: hsl(199, 91%, 90%),
+        light: #c2eafc,
+        main: #b3e5fc,
+        dark: #7da0b0,
+        darker: #004260,
+    ),
+    secondary: (
+        lighter: hsl(195, 14%, 99%),
+        light: #eff2f3,
+        main: #eceff1,
+        dark: #a5a7a8,
+        darker: hsl(200, 2%, 50%),
+    )
+);

@@ -1,4 +1,6 @@
 @import "../../../assets/styles/variables/colors";
+@import "../../../assets/styles/functions/map-deep-get.scss";
+
 
 .job {
     &__task {
@@ -15,8 +17,8 @@
 
     button {
         border: none;
-        color: $primaryDarker;
-        background-color: $primaryDark;
+        color: map-deep-get($colors, 'primary', 'darker');
+        background-color: map-deep-get($colors, 'primary', 'dark');
         margin-top: 1em;
     }
 }

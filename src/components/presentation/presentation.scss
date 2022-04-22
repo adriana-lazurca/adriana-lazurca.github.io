@@ -1,4 +1,6 @@
 @import "../../assets/styles/variables/colors";
+@import "../../assets/styles/functions/map-deep-get.scss";
+
 
 .presentation {
     height: 100%;
@@ -13,8 +15,8 @@
         "carousel";
 
     & > div {
-        background-color: $secondaryBase;
-        color: $primaryDarker;
+        background-color: map-deep-get($colors, 'secondary', 'main');
+        color: map-deep-get($colors, 'primary', 'darker');
         text-align: center;
     }
 }
