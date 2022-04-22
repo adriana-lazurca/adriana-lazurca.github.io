@@ -1,5 +1,7 @@
 @import-normalize;
 @import "./assets/styles/variables/_colors.scss";
+@import "./assets/styles/functions/map-deep-get.scss";
+
 
 html {
   font-size: 100%;
@@ -10,7 +12,7 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $secondaryBase;
+  background-color: map-deep-get($colors, "secondary", "main");
 }
 
 code {

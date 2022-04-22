@@ -37,7 +37,7 @@
         border: none;
         font-size: x-large;
         background-color: map-deep-get($colors, 'primary', 'light');
-        color: $primaryDarker;
+        color: map-deep-get($colors, 'primary', 'darker');
         border: 0.5px solid map-deep-get($colors, 'primary', 'light');;
         border-radius: 50%;
 

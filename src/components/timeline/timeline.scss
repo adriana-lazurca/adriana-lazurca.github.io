@@ -1,20 +1,21 @@
 @import "../../assets/styles/variables/breakpoints";
 @import "../../assets/styles/variables/colors";
+@import "../../assets/styles/functions/map-deep-get.scss";
 
 // The timeline container
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: $secondaryBase;
-    color: $primaryDarker;
+    background-color: map-deep-get($colors, "secondary", "main");
+    color: map-deep-get($colors, "primary", "darker");
 
     /* The timeline(line) */
     &::after {
         content: "";
         position: absolute;
         width: 5px;
-        background-color: $primaryDark;
+        background-color: map-deep-get($colors, "primary", "dark");
         top: 0;
         bottom: 0;
         left: 50%;
