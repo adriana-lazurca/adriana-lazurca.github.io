@@ -1,4 +1,4 @@
-import bigPhoto from '../../../assets/images/adriana-big.jpg';
+import bigPhoto from '../../../assets/images/adriana-big.png';
 import '../../../assets/styles/variables/_breakpoints.scss';
 import '../../../assets/styles/fonts.scss';
 import './introduction.scss';

@@ -2,13 +2,12 @@
 @import "../../assets/styles/variables/breakpoints";
 @import "../../assets/styles/functions/map-deep-get.scss";
 
-
 .navigation {
     height: 9%;
     width: 100%;
     text-align: center;
     font-weight: bold;
-    background-color: map-deep-get($colors, 'primary', 'dark');;
+    background-color: map-deep-get($colors, "secondary", "darker");
 
     &__item {
         display: list-item;
@@ -29,7 +28,7 @@
     a:hover,
     a:active {
         text-decoration: none;
-        color: map-deep-get($colors, 'primary', 'darker');
+        color: map-deep-get($colors, "secondary", "light");
     }
 }
 

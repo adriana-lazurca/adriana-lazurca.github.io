@@ -7,7 +7,7 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: map-deep-get($colors, "secondary", "main");
+    background-color: map-deep-get($colors, "secondary", "light");
     color: map-deep-get($colors, "primary", "darker");
 
     /* The timeline(line) */
@@ -15,7 +15,7 @@
         content: "";
         position: absolute;
         width: 5px;
-        background-color: map-deep-get($colors, "primary", "dark");
+        background-color: map-deep-get($colors, "primary", "main");
         top: 0;
         bottom: 0;
         left: 50%;

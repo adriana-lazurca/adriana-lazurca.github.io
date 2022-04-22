@@ -15,7 +15,7 @@
         "carousel";
 
     & > div {
-        background-color: map-deep-get($colors, 'secondary', 'main');
+        background-color: map-deep-get($colors, 'secondary', 'light');
         color: map-deep-get($colors, 'primary', 'darker');
         text-align: center;
     }
