@@ -7,7 +7,7 @@
     width: 100%;
     text-align: center;
     font-weight: bold;
-    background-color: map-deep-get($colors, "secondary", "darker");
+    background-color: map-deep-get($colors, "primary", "dark");
 
     &__item {
         display: list-item;
@@ -28,7 +28,7 @@
     a:hover,
     a:active {
         text-decoration: none;
-        color: map-deep-get($colors, "secondary", "light");
+        color: $color-pure-white;
     }
 }
 

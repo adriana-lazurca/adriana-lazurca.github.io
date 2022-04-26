@@ -11,13 +11,15 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        border-radius: 6px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     }
 
     &__card-content {
         flex: 1 1 auto;
         position: relative;
         padding: 1em 3em;
-        background-color: map-deep-get($colors, 'primary', 'light');
+        background-color: $color-pure-white;
         font-family: cursive;
 
         & > div {
@@ -36,15 +38,14 @@
         cursor: pointer;
         border: none;
         font-size: x-large;
-        background-color: map-deep-get($colors, 'secondary', 'light');
-        color: map-deep-get($colors, 'primary', 'darker');
-        border: 0.5px solid map-deep-get($colors, 'secondary', 'light');
+        background-color: map-deep-get($colors, "primary", "light");
+        color: map-deep-get($colors, "primary", "dark");
+        border: 0.5px solid map-deep-get($colors, "primary", "light");
         border-radius: 50%;
 
-        &:hover{
+        &:hover {
             transform: scaleY(1.2);
         }
-        
     }
 
     &__prev {
@@ -63,7 +64,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: map-deep-get($colors, 'primary', 'main');
+        background-color: map-deep-get($colors, "primary", "light");
 
         ul {
             list-style-type: none;
@@ -78,10 +79,10 @@
             cursor: pointer;
 
             &--inactive {
-                background-color: map-deep-get($colors, 'primary', 'dark');
+                background-color: map-deep-get($colors, "primary", "main");
             }
             &--active {
-                background-color: map-deep-get($colors, 'secondary', 'light');
+                background-color: $color-pure-white;
             }
         }
     }

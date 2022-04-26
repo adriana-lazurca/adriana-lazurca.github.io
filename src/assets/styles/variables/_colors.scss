@@ -3,11 +3,9 @@ $color-pure-white: white;
 
 $colors: (
     primary: (
-        lighter: #DEB197,
-        light: #e6d5d1,
-        main: #e2ceca,
-        dark: #c8a79d,
-        darker: #4f3f36,
+        light: hsl(11, 11%, 90%),
+        main: #d4cbc9,
+        dark: #4f3f36,
     ),
     secondary: (
         lighter: hsl(195, 14%, 99%),

@@ -19,7 +19,7 @@
             padding: 0 0.5em;
 
             a {
-                color: map-deep-get($colors, 'primary', 'darker');
+                color: map-deep-get($colors, 'primary', 'dark');
             }
         }
     }
