@@ -16,7 +16,14 @@
         content: "";
         position: absolute;
         width: 5px;
-        background-color: map-deep-get($colors, "primary", "dark");
+        // background-color: map-deep-get($colors, "primary", "dark");
+        background-image: linear-gradient(
+            180deg,
+            #fff 0,
+            map-deep-get($colors, "primary", "dark") 30px,
+            map-deep-get($colors, "primary", "dark") calc(100% - 30px),
+            #fff
+        );
         top: 0;
         bottom: 0;
         left: 50%;
