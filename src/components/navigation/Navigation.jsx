@@ -9,25 +9,33 @@ export const Navigation = () => (
       <ul>
          <li>
             <HashLink smooth to='#home'>
-               <AiOutlineHome />
+               <span className='navigation__icon'>
+                  <AiOutlineHome />
+               </span>
                <span className='navigation__item'> HOME</span>
             </HashLink>
          </li>
          <li>
             <HashLink smooth to='#experience'>
-               <MdWorkOutline />
+               <span className='navigation__icon'>
+                  <MdWorkOutline />
+               </span>
                <span className='navigation__item'>EXPERIENCE</span>
             </HashLink>
          </li>
          <li>
             <HashLink smooth to='#education'>
-               <MdOutlineSchool />
+               <span className='navigation__icon'>
+                  <MdOutlineSchool />
+               </span>
                <span className='navigation__item'> EDUCATION</span>
             </HashLink>
          </li>
          <li>
             <HashLink smooth to='#contact'>
-               <MdOutlineContactPage />
+               <span className='navigation__icon'>
+                  <MdOutlineContactPage />
+               </span>
                <span className='navigation__item'>CONTACT</span>
             </HashLink>
          </li>

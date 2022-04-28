@@ -37,6 +37,10 @@
         height: 100%;
         flex-basis: 15%;
 
+        &__icon {
+            font-size: 1.5rem;
+        }
+
         ul {
             display: block;
             li {
