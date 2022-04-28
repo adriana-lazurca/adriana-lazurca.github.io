@@ -1,4 +1,4 @@
-import { MdOutlineExpandMore, MdTaskAlt } from 'react-icons/md';
+import { MdOutlineExpandMore, MdOutlineExpandLess, MdTaskAlt } from 'react-icons/md';
 import { useState } from 'react';
 
 import { Technologies } from '../technologies';
@@ -17,10 +17,12 @@ export const JobCard = ({ job }) => {
          <p className='job__company'>
             <span>{job.company.name}</span> - <span className='opacity'>{job.company.city}</span>
          </p>
+
          {allTechnologies.length > 0 && <Technologies technologies={allTechnologies} />}
          <button onClick={() => setViewMore((showMore) => !showMore)}>
-            Tasks <MdOutlineExpandMore />
+            Tasks {showMore ? <MdOutlineExpandMore /> : <MdOutlineExpandLess />}
          </button>
+
          {showMore && (
             <div>
                <ul>
