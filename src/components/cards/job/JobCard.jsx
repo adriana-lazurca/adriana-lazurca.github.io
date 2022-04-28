@@ -18,15 +18,17 @@ export const JobCard = ({ job }) => {
             <span>{job.company.name}</span> - <span className='opacity'>{job.company.city}</span>
          </p>
          {allTechnologies.length > 0 && <Technologies technologies={allTechnologies} />}
-         <button 
-         onClick={() => setViewMore((showMore) => !showMore)}>
+         <button onClick={() => setViewMore((showMore) => !showMore)}>
             Tasks <MdOutlineExpandMore />
          </button>
          {showMore && (
             <div>
                <ul>
                   {job.tasks.map((task, index) => (
-                     <li key={`job-${job.company.name}-${index}`} className='job__task'><MdTaskAlt/>{task}</li>
+                     <li key={`job-${job.company.name}-${index}`} className='job__task'>
+                        <MdTaskAlt />
+                        <span className='task-description'>{task}</span>
+                     </li>
                   ))}
                </ul>
             </div>

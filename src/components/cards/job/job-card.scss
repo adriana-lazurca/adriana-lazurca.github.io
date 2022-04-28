@@ -1,10 +1,13 @@
 @import "../../../assets/styles/variables/colors";
 @import "../../../assets/styles/functions/map-deep-get.scss";
 
-
 .job {
     &__task {
         margin-bottom: 1em;
+
+        .task-description{
+            margin-left: 0.5em;
+        }
     }
 
     &__company {
@@ -17,8 +20,8 @@
 
     button {
         border: none;
-        color: map-deep-get($colors, 'primary', 'dark');
-        background-color: map-deep-get($colors, 'primary', 'main');
+        color: map-deep-get($colors, "primary", "dark");
+        background-color: map-deep-get($colors, "primary", "main");
         margin: 1em 0;
     }
 }

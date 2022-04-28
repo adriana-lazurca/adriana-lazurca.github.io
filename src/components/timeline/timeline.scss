@@ -9,6 +9,7 @@
     margin: 0 auto;
     background-color: $color-pure-white;
     color: map-deep-get($colors, "primary", "dark");
+    margin: 1rem 0;
 
     /* The timeline(line) */
     &::after {
