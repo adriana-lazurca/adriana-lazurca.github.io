@@ -20,6 +20,7 @@
         position: relative;
         padding: 1em 3em;
         background-color: $color-pure-white;
+        color:map-deep-get($colors, "secondary", "main");
         font-family: cursive;
 
         & > div {
@@ -38,7 +39,7 @@
         cursor: pointer;
         border: none;
         font-size: x-large;
-        background-color: map-deep-get($colors, "primary", "light");
+        background-color: $color-pure-white;
         color: map-deep-get($colors, "primary", "dark");
         border: 0.5px solid map-deep-get($colors, "primary", "light");
         border-radius: 50%;
@@ -79,7 +80,12 @@
             cursor: pointer;
 
             &--inactive {
+                --opacity: 30%;
                 background-color: map-deep-get($colors, "primary", "main");
+
+                &:hover {
+                    --opacity: 100%;
+                }
             }
             &--active {
                 background-color: $color-pure-white;
@@ -101,7 +107,7 @@
     .carousel {
         &__card-content {
             p {
-                max-width: 60%;
+                max-width: 85%;
             }
         }
     }

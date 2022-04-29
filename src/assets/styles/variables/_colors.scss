@@ -3,15 +3,13 @@ $color-pure-white: white;
 
 $colors: (
     primary: (
-        light: hsl(11, 11%, 90%),
-        main: #d4cbc9,
-        dark: #4f3f36,
+        light: rgb(232, 228, 227),
+        main: rgb(212, 203, 201, var(--opacity, 100%)),
+        dark: rgb(79, 63, 54),
     ),
     secondary: (
-        lighter: hsl(195, 14%, 99%),
-        light: #e6e6eb,
-        main: #d3d5de,
-        dark: #d1d5e6,
-        darker: #92949d,
+        light: rgb(242, 165, 120),
+        main: rgb(139 7 11),
+        dark: rgb(106, 44, 8),
     ),
 );
