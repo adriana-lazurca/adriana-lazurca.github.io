@@ -34,12 +34,13 @@
 
 .icon {
     color: map-deep-get($colors, "secondary", "main");
-    background-color: map-deep-get($colors, "primary", "light");
+    background-color: $color-pure-white;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: x-large;
 }
 
 ul {
@@ -60,7 +61,11 @@ ul {
     .skill__title {
         display: flex;
         align-items: flex-end;
-        gap: 1em;
+        gap: 0.6em;
+    }
+
+    .icon {
+        font-size: xx-large;
     }
 
     .icon-wrap {

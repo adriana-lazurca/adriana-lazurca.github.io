@@ -37,7 +37,7 @@ export const Skills = () => {
                   <div key={`skill-${skill.name}-${index}`} className='skill'>
                      <div className='skill__title'>
                         <div className='icon-wrap'>
-                           <div className='icon'>{<Icon size={20} iconName={skill.icon} />}</div>
+                           <div className='icon'>{<Icon iconName={skill.icon} />}</div>
                         </div>
 
                         {<div className='skill__name'>{skill.name}</div>}

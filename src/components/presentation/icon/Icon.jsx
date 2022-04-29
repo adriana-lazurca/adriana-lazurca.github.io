@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Icons from 'react-icons/di';
 
-export const Icon = ({ iconName, size }) => {
+export const Icon = ({ iconName }) => {
    const icon = React.createElement(Icons[iconName]);
-   return <div style={{ fontSize: size }}>{icon}</div>;
+   return <div>{icon}</div>;
 };
