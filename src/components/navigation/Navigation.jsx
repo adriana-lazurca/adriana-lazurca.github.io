@@ -4,41 +4,24 @@ import { MdWorkOutline, MdOutlineSchool, MdOutlineContactPage } from 'react-icon
 
 import './navigation.scss';
 
+const navigationItems = {
+   home: <AiOutlineHome />,
+   experience: <MdWorkOutline />,
+   education: <MdOutlineSchool />,
+   contact: <MdOutlineContactPage />,
+};
+
 export const Navigation = () => (
    <div className='navigation'>
       <ul>
-         <li>
-            <HashLink smooth to='#home'>
-               <span className='navigation__icon'>
-                  <AiOutlineHome />
-               </span>
-               <span className='navigation__item'> HOME</span>
-            </HashLink>
-         </li>
-         <li>
-            <HashLink smooth to='#experience'>
-               <span className='navigation__icon'>
-                  <MdWorkOutline />
-               </span>
-               <span className='navigation__item'>EXPERIENCE</span>
-            </HashLink>
-         </li>
-         <li>
-            <HashLink smooth to='#education'>
-               <span className='navigation__icon'>
-                  <MdOutlineSchool />
-               </span>
-               <span className='navigation__item'> EDUCATION</span>
-            </HashLink>
-         </li>
-         <li>
-            <HashLink smooth to='#contact'>
-               <span className='navigation__icon'>
-                  <MdOutlineContactPage />
-               </span>
-               <span className='navigation__item'>CONTACT</span>
-            </HashLink>
-         </li>
+         {Object.entries(navigationItems).map(([name, icon]) => (
+            <li key={`icon-name-${icon.name}`}>
+               <HashLink smooth to={`#${name}`}>
+                  <span className='navigation__icon'>{icon}</span>
+                  <span className='navigation__item'> {name.toUpperCase()}</span>
+               </HashLink>
+            </li>
+         ))}
       </ul>
    </div>
 );
