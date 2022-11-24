@@ -1,6 +1,4 @@
 import './timeline-card.scss';
-// import { MdOutlineWorkOutline } from 'react-icons/md';
-// import { MdOutlineSchool } from 'react-icons/md';
 
 export const TimelineCard = ({ children, index, id, icon }) => {
   const cardPosition = index % 2 === 0 ? 'left' : 'right';

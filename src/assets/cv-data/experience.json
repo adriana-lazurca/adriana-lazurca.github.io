@@ -1,0 +1,203 @@
+[     
+   {
+      "company": {
+      "name": "Tangent Works",
+      "city": "Gooik"
+   },
+   "startDate": "2022-05-23",
+   "endDate": "2022-08-05",
+   "title": "Front-End Developer Intern",
+   "tasks": [
+      "Implemented sorting and filtering functionalities on different parts of the application",
+      "Increased knowledge about React and Typescript",
+      "Used Styled Components and Material UI for styling",
+      "Wrote unit tests with React Testing Library and Jest",
+      "Developed new components in isolation using Storybook",
+      "Managed sprint tasks with Azure DevOps"
+   ],
+   "skills": [
+      {
+         "type": "front-end",
+         "technologies": ["react", "typescript","react testing library","storybook" ]
+      },
+      {
+         "type": "versioning system",
+         "technologies": ["git"]
+      },
+      {
+         "type": "project management",
+         "technologies": ["azure devops"]
+      },
+      {
+         "type": "hosting platforms",
+         "technologies": ["bitbucket"]
+      }
+      
+   ],
+   "description": "More details about the website can be found at: https://www.tangent.works/tim-studio/"
+},
+   {
+         "company": {
+         "name": "Climact",
+         "city": "Louvain-la-Neuve"
+      },
+      "startDate": "2021-06-01",
+      "endDate": "2021-11-31",
+      "title": "Front-End Developer Intern",
+      "tasks": [
+         "Implemented new features on the website using libraries like React, Redux and ApexCharts",
+         "Improved existing features and made the website more user friendly",
+         "Extended the knowledge on Git workflow using Bitbucket",
+         "Managed tasks with Jira reporting tool",
+         "Learned how to work with the Agile methodology"
+      ],
+      "skills": [
+         {
+            "type": "front-end",
+            "technologies": ["html", "css", "javascript", "react", "redux"]
+         },
+         {
+            "type": "versioning system",
+            "technologies": ["git"]
+         },
+         {
+            "type": "project management",
+            "technologies": ["jira"]
+         },
+         {
+            "type": "hosting platforms",
+            "technologies": ["bitbucket"]
+         },
+         {
+            "type": "other",
+            "technologies": ["apex charts"]
+         }
+      ],
+      "description": "The application developed at Climact can be found at: https://pathwaysexplorer.climact.com"
+   },
+   {
+      "company": {
+         "name": "Harte Hanks",
+         "city": "Iasi"
+      },
+      "startDate": "2014-11-01",
+      "endDate": "2020-02-31",
+      "title": "Data Optimization Specialist",
+      "tasks": [
+         "Became familiarized with SQL database and queries, used for retrieving and manipulating data",
+         "Obtained better attention to details and time management, while making sure to maintain data quality and high productivity"
+      ],
+      "skills": [
+         {
+            "type": "other",
+            "technologies": ["siebel", "excel", "sql"]
+         }
+      ],
+      "description": ""
+   },
+   {
+      "company": {
+         "name": "Gfk",
+         "city": "Iasi"
+      },
+      "startDate": "2014-03-01",
+      "endDate": "2016-04-31",
+      "title": "Social Media Intelligence Analyst",
+      "tasks": [
+         "Improved analytical sensitivity by evaluating and rating relevant online media channels (Blogs, eCommerce, Forum, Micro Blogs, News, Social Nets, Video and Web)"
+      ],
+      "skills": [],
+      "description": ""
+   },
+   {
+      "company": {
+         "name": "Gfk",
+         "city": "Iasi"
+      },
+      "startDate": "2014-03-01",
+      "endDate": "2014-11-31",
+      "title": "Data Processing Assistant",
+      "tasks": [
+         "Performed quality check to increase the effectiveness and efficiency of the database and trained new employees",
+         "Developed collaboration skills and contributed to team efforts to deliver expected results"
+      ],
+      "skills": [],
+      "description": ""
+   },
+   {
+      "institution": {
+         "name": "BeCode",
+         "city": "Brussels"
+      },
+      "startDate": "2021-01-01",
+      "endDate": "2021-07-31",
+      "type": "Web Development - Apprenticeship",
+      "skills": [
+         {
+            "type": "front-end",
+            "technologies": ["html", "css", "bootstrap", "javascript", "vue"]
+         },
+         {
+            "type": "back-end",
+            "technologies": ["php", "laravel"]
+         },
+         {
+            "type": "database",
+            "technologies": ["mysql"]
+         },
+         {
+            "type": "versioning system",
+            "technologies": ["git"]
+         },
+         {
+            "type": "hosting platforms",
+            "technologies": ["github"]
+         }
+      ]
+   },
+   {
+      "institution": {
+         "name": "„Alexandru Ioan Cuza” University",
+         "city": "Iasi"
+      },
+      "startDate": "2011-10-01",
+      "endDate": "2013-07-31",
+      "type": "Master in Children's Rights",
+      "skills": []
+   },
+   {
+      "institution": {
+         "name": "„Alexandru Ioan Cuza” University",
+         "city": "Iasi"
+      },
+      "startDate": "2008-10-01",
+      "endDate": "2011-07-31",
+      "type": "Bachelor's Degree in Social Work",
+      "skills": []
+   },
+   {
+      "institution": {
+         "name": "Adults Qualification Center",
+         "city": "Iasi"
+      },
+      "startDate": "2012-01-01",
+      "endDate": "2012-03-31",
+      "type": "Basic Accounting",
+      "skills": []
+   },
+   {
+      "institution": {
+         "name": "Ecdl Romania",
+         "city": "Suceava"
+      },
+      "startDate": "2008-01-01",
+      "endDate": "2008-12-31",
+      "type": "European Computer Driving Licence Core",
+      "skills": [
+         {
+            "type": "Ms Office",
+            "technologies": ["word", "power point", "excel", "access", "outlook"]
+         }
+      ]
+   }
+]
