@@ -1,13 +1,8 @@
 import './timeline-card.scss';
 
-export const TimelineCard = ({ children, index, id, icon }) => {
-  const cardPosition = index % 2 === 0 ? 'left' : 'right';
-
+export const TimelineCard = ({ children, position = 'right', id, icon }) => {
   return (
-    <div
-      id={id}
-      className={`timeline__card ${cardPosition === 'left' ? 'timeline__card--left' : 'timeline__card--right'}`}
-    >
+    <div id={id} className={`timeline__card timeline__card--${position}`}>
       <div className="timeline__card-content">{children}</div>
       <div className="circle">{icon}</div>
     </div>

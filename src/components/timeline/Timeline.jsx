@@ -1,28 +1,20 @@
-import { MdOutlineWorkOutline } from 'react-icons/md';
-import { MdOutlineSchool } from 'react-icons/md';
-
-import { JobCard } from '../cards/job';
-import { EducationCard } from '../cards/education';
 import { TimelineCard } from './timeline-card';
 import { TimelineContainer } from './timeline-container';
 import './timeline.scss';
 
-export const Timeline = ({ experience }) => {
-  const isJob = (experience) => {
-    return experience.hasOwnProperty('company');
-  };
+export const Timeline = ({ data, setId, getIcon, setContent }) => {
   return (
     <TimelineContainer>
-      {experience &&
-        experience.map((experience, index) => {
+      {data &&
+        data.map((item, index) => {
           return (
             <TimelineCard
-              key={`experience-${experience.title}-${index}`}
-              index={index}
-              id={isJob(experience) ? 'experience' : 'education'}
-              icon={isJob(experience) ? <MdOutlineWorkOutline /> : <MdOutlineSchool />}
+              key={`card-${index}`}
+              position={index % 2 === 0 ? 'left' : 'right'}
+              id={setId && setId(item)}
+              icon={getIcon && getIcon(item)}
             >
-              {isJob(experience) ? <JobCard job={experience} /> : <EducationCard education={experience} />}
+              {setContent && setContent(item)}
             </TimelineCard>
           );
         })}
