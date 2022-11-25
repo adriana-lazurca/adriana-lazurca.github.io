@@ -6,6 +6,7 @@ The project is a representation of my CV.
 
 - **ReactJS**
 - **React Router** for the navigation
+- **SASS** for styling
 
 ### Deploy
 The application is deployed with Github Pages.
