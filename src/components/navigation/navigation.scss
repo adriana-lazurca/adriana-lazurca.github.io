@@ -18,7 +18,12 @@
         list-style-type: none;
         display: flex;
         justify-content: space-evenly;
+        margin-block: 0;
+        height: 100%;
+
         li {
+            display: flex;
+            justify-content: center;
             padding: 0 0.5em;
         }
     }
@@ -27,8 +32,15 @@
     a:visited,
     a:hover,
     a:active {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         color: $color-pure-white;
+    }
+
+    li:hover,
+    li:has(a.active) {
+        background-color: map-deep-get($colors, "secondary", "dark");
     }
 }
 
@@ -36,35 +48,19 @@
     .navigation {
         height: 100%;
         flex-basis: 15%;
+        padding-top: 2%;
 
         &__icon {
             font-size: 1.5rem;
         }
 
         ul {
-            display: block;
-            li {
-                padding: 1.2em;
-            }
-        }
-    }
-}
+            flex-direction: column;
+            gap: 5%;
+            justify-content: flex-start;
 
-@media (min-width: $bp-lg) {
-    .navigation {
-        ul {
             li {
-                padding: 1.5em;
-            }
-        }
-    }
-}
-
-@media (min-width: $bp-2xl) {
-    .navigation {
-        ul {
-            li {
-                padding: 2em;
+                padding: 0.5em;
             }
         }
     }

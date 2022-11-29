@@ -25,7 +25,7 @@ export const App = () => {
           <Timeline
             data={experience}
             setId={(item) => (isJob(item) ? 'experience' : 'education')}
-            getIcon={(item) => (isJob(item) ? <MdOutlineWorkOutline /> : <MdOutlineSchool />)}
+            setIcon={(item) => (isJob(item) ? <MdOutlineWorkOutline /> : <MdOutlineSchool />)}
             setContent={(item) => (isJob(item) ? <JobCard job={item} /> : <EducationCard education={item} />)}
           />
           <Contact />
