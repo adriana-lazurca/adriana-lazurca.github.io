@@ -9,7 +9,7 @@ export const Timeline = ({ data, setId, setIcon, setContent }) => {
       {data &&
         data.map((item, index) => {
           const newId = setId(item);
-          const id = newId !== oldId && newId;
+          const id = newId !== oldId ? newId : undefined;
           oldId = newId;
           return (
             <TimelineCard
