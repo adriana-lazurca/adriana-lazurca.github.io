@@ -2,8 +2,9 @@
 @import "../../assets/styles/variables/colors";
 @import "../../assets/styles/functions/map-deep-get.scss";
 
-
 .contact {
+    margin-bottom: 0.1rem;
+
     &__list {
         display: flex;
         align-items: center;
@@ -13,13 +14,14 @@
         font-size: 1.3rem;
         margin-block-start: 0 !important;
         margin-block-end: 0 !important;
-        background-color: map-deep-get($colors, 'primary', 'main');
+        background-color: map-deep-get($colors, "primary", "main");
+
         li {
             display: inline;
             padding: 0 0.5em;
 
             a {
-                color: map-deep-get($colors, 'primary', 'dark');
+                color: map-deep-get($colors, "primary", "dark");
             }
         }
     }
