@@ -9,6 +9,10 @@
     font-weight: bold;
     background-color: map-deep-get($colors, "primary", "dark");
 
+    &__icon {
+        pointer-events: none;
+    }
+
     &__item {
         display: list-item;
         padding-left: 0.5em;
@@ -47,7 +51,6 @@
 
         &__icon {
             font-size: 1.5rem;
-            pointer-events: none;
         }
 
         ul {

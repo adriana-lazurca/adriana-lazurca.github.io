@@ -34,7 +34,8 @@ export const Navigation = () => {
     setElementInView(id);
 
     const destElement = document.getElementById(id);
-    destElement?.scrollIntoView({ behavior: 'smooth' });
+    destElement?.scrollIntoView();
+    // destElement?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
