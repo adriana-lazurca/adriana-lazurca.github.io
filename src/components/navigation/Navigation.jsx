@@ -1,36 +1,52 @@
-import { HashLink } from 'react-router-hash-link';
-import { useLocation } from 'react-router-dom';
-
+import { useState } from 'react';
+import useNavigation from './useNavigation';
 import { AiOutlineHome } from 'react-icons/ai';
 import { MdWorkOutline, MdOutlineSchool, MdOutlineContactPage } from 'react-icons/md';
 
 import './navigation.scss';
+import React from 'react';
 
-const navigationItems = {
+export const navigationItems = {
   home: <AiOutlineHome />,
   experience: <MdWorkOutline />,
   education: <MdOutlineSchool />,
   contact: <MdOutlineContactPage />,
 };
+const elementIds = Object.keys(navigationItems);
 
 export const Navigation = () => {
-  const { hash } = useLocation();
+  const [elementInView, setElementInView] = useState('home');
 
-  const isActive = (hashId) => {
-    return hashId === hash;
+  useNavigation({
+    elementIds,
+    onIsElementInView: setElementInView,
+  });
+
+  const onClick = (event) => {
+    event.stopPropagation();
+
+    let targetElement = event.target;
+    const id = targetElement.textContent?.trim().toLowerCase();
+    if (!id) {
+      return;
+    }
+
+    setElementInView(id);
+
+    const destElement = document.getElementById(id);
+    destElement?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <div className="navigation">
       <ul>
-        {Object.entries(navigationItems).map(([name, icon]) => {
-          const menuItemId = `#${name}`;
+        {Object.entries(navigationItems).map(([id, icon]) => {
           return (
-            <li key={`icon-name-${name}`}>
-              <HashLink to={menuItemId} smooth className={isActive(menuItemId) ? 'active' : ''}>
+            <li key={`icon-name-${id}`} onClick={onClick}>
+              <nav className={id === elementInView ? 'active' : ''}>
                 <span className="navigation__icon">{icon}</span>
-                <span className="navigation__item"> {name.toUpperCase()}</span>
-              </HashLink>
+                <span className="navigation__item">{id.toUpperCase()}</span>
+              </nav>
             </li>
           );
         })}

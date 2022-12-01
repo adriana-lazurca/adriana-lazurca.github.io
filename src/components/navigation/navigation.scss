@@ -24,22 +24,17 @@
         li {
             display: flex;
             justify-content: center;
+            align-items: center;
+            color: $color-pure-white;
             padding: 0 0.5em;
+            cursor: pointer;
         }
     }
 
-    a,
-    a:visited,
-    a:hover,
-    a:active {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: $color-pure-white;
+    li:hover {
+        background-color: map-deep-get($colors, "secondary", "lighterDark");
     }
-
-    li:hover,
-    li:has(a.active) {
+    li:has(nav.active) {
         background-color: map-deep-get($colors, "secondary", "dark");
     }
 }
@@ -52,6 +47,7 @@
 
         &__icon {
             font-size: 1.5rem;
+            pointer-events: none;
         }
 
         ul {
