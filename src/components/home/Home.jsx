@@ -1,10 +1,10 @@
 import personalInfo from '../../assets/cv-data/personal-info.json';
 import { Introduction, Carousel } from './index';
-import './presentation.scss';
+import './home.scss';
 
-export const Presentation = () => {
+export const Home = () => {
   return (
-    <div className="presentation" id="home">
+    <div className="home" id="home">
       <Introduction personalInfo={personalInfo} />
       <Carousel personalInfo={personalInfo} />
     </div>
