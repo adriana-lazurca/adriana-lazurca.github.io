@@ -2,26 +2,38 @@ import { TimelineCard } from './timeline-card';
 import { TimelineContainer } from './timeline-container';
 import './timeline.scss';
 
+const Section = ({ id, children }) => <div id={id}>{children}</div>;
+
 export const Timeline = ({ data, setId, setIcon, setContent }) => {
-  let oldId;
-  return (
-    <TimelineContainer>
-      {data &&
-        data.map((item, index) => {
-          const newId = setId(item);
-          const id = newId !== oldId ? newId : undefined;
-          oldId = newId;
-          return (
-            <TimelineCard
-              key={`card-${index}`}
-              position={index % 2 === 0 ? 'left' : 'right'}
-              id={id}
-              icon={setIcon && setIcon(item)}
-            >
-              {setContent && setContent(item)}
-            </TimelineCard>
-          );
-        })}
-    </TimelineContainer>
-  );
+  const ids = [];
+  const cards = {};
+
+  data?.forEach((item, index) => {
+    const id = setId ? setId(item) : undefined;
+    if (id && !ids.includes(id)) {
+      ids.push(id);
+      cards[id] = [];
+    }
+
+    const card = (
+      <TimelineCard
+        key={`card-${index}`}
+        className={id}
+        position={index % 2 === 0 ? 'left' : 'right'}
+        icon={setIcon && setIcon(item)}
+      >
+        {setContent && setContent(item)}
+      </TimelineCard>
+    );
+    cards[id].push(card);
+  });
+
+  const sections = ids.map((id) => {
+    return (
+      <Section key={id} id={id}>
+        {cards[id]}
+      </Section>
+    );
+  });
+  return <TimelineContainer>{sections}</TimelineContainer>;
 };

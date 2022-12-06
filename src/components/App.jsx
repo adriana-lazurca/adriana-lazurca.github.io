@@ -4,7 +4,7 @@ import { MdOutlineSchool } from 'react-icons/md';
 
 import experience from '../assets/cv-data/experience.json';
 import { Timeline } from './timeline';
-import { Presentation } from './presentation/index';
+import { Home } from './home/index';
 import { Navigation } from './navigation';
 import { Contact } from './contact';
 import { JobCard } from './cards/job';
@@ -21,7 +21,7 @@ export const App = () => {
     <BrowserRouter>
       <div className="app">
         <div className="app__content">
-          <Presentation />
+          <Home />
           <Timeline
             data={experience}
             setId={(item) => (isJob(item) ? 'experience' : 'education')}
