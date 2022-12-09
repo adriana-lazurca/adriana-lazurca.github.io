@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef } from 'react';
 
-const useNavigation = ({ elementSelectors, ids, onIsElementInView }) => {
+const useNavigation = ({ selectors, ids, onElementInViewChange }) => {
   const elementsRatio = useRef({});
+  const visibleElement = useRef('');
 
   const findMostVisibleElement = () => {
     let maxVisibility = 0;
@@ -10,7 +11,7 @@ const useNavigation = ({ elementSelectors, ids, onIsElementInView }) => {
     Object.keys(elementsRatio.current).forEach((key) => {
       const value = elementsRatio.current[key];
 
-      if (value > maxVisibility) {
+      if (value > 0 && value >= maxVisibility) {
         maxVisibility = value;
         mostVisibleElement = key;
       }
@@ -19,9 +20,10 @@ const useNavigation = ({ elementSelectors, ids, onIsElementInView }) => {
     return mostVisibleElement;
   };
 
-  const onElementInViewChange = useCallback(
+  const handleElementInViewChange = useCallback(
     (entries) => {
       entries.forEach((entry) => {
+        // const matchedElementId = isElementMatch(entry.target);
         const matchedElementId = ids.find((id) => entry.target.className.includes(id));
         elementsRatio.current[matchedElementId] = entry.intersectionRatio;
 
@@ -30,19 +32,20 @@ const useNavigation = ({ elementSelectors, ids, onIsElementInView }) => {
         }
 
         const mostVisibleElement = findMostVisibleElement();
-        if (mostVisibleElement) {
-          onIsElementInView(mostVisibleElement);
+        if (mostVisibleElement && mostVisibleElement !== visibleElement.current) {
+          visibleElement.current = mostVisibleElement;
+          onElementInViewChange(mostVisibleElement);
         }
       });
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [JSON.stringify(ids), onIsElementInView],
+    [JSON.stringify(ids), onElementInViewChange],
   );
 
   useEffect(() => {
-    const observer = new IntersectionObserver(onElementInViewChange, { threshold: 0.8, delay: 750 });
+    const observer = new IntersectionObserver(handleElementInViewChange, { threshold: 0.8, delay: 750 });
 
-    elementSelectors.forEach((selector) => {
+    selectors.forEach((selector) => {
       const elements = document.querySelectorAll(selector);
       for (var i = 0; i < elements.length; ++i) {
         observer.observe(elements[i]);
@@ -53,7 +56,7 @@ const useNavigation = ({ elementSelectors, ids, onIsElementInView }) => {
       observer.disconnect();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [JSON.stringify(elementSelectors), onElementInViewChange]);
+  }, [JSON.stringify(selectors), onElementInViewChange]);
 };
 
 export default useNavigation;

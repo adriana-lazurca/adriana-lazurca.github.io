@@ -21,7 +21,7 @@ const sectionItems = {
   },
 };
 
-export const navigationItems = {
+const navigationItems = {
   home: {
     icon: <AiOutlineHome />,
   },
@@ -36,30 +36,30 @@ export const navigationItems = {
   },
 };
 
-const elementSelectors = Object.entries(sectionItems).map(([, element]) => element.selector);
+const selectors = Object.entries(sectionItems).map(([, element]) => element.selector);
 const ids = Object.keys(navigationItems);
 
 export const Navigation = () => {
-  const [elementInView, setElementInView] = useState('home');
+  const [elementInView, setElementInView] = useState(ids[0]);
 
   useNavigation({
-    elementSelectors,
+    selectors,
     ids,
-    onIsElementInView: setElementInView,
+    onElementInViewChange: setElementInView,
   });
 
   const onClick = (event) => {
     event.stopPropagation();
 
     const targetElement = event.target;
-    const id = targetElement.textContent?.trim().toLowerCase();
-    if (!id) {
+    const navigationItemId = targetElement.textContent?.trim().toLowerCase();
+    if (!navigationItemId) {
       return;
     }
 
-    setElementInView(id);
+    setElementInView(navigationItemId);
 
-    const destElement = document.getElementById(id);
+    const destElement = document.querySelector(`.${navigationItemId}`);
     destElement?.scrollIntoView({ behavior: 'smooth' });
   };
 
