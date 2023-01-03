@@ -17,12 +17,11 @@ const contactItems = [
   },
   {
     icon: <RiDiscordLine />,
-    url: '',
     tooltip: 'Adriana Lazurca#5360',
   },
   {
     icon: <AiOutlineMail />,
-    url: '',
+    url: 'mailto:adrianar.lazurca@gmail.com',
     tooltip: 'adrianar.lazurca@gmail.com',
   },
 ];
@@ -34,7 +33,12 @@ export const Contact = () => {
       <ul className="contact__list">
         {contactItems.map((contactItem, index) => (
           <li key={`contactItem-${contactItem.icon}-${index}`}>
-            <a href={contactItem.url} target="_blank" rel="noreferrer" data-tip={contactItem.tooltip}>
+            <a
+              href={contactItem.url ?? contactItem.url}
+              target="_blank"
+              rel="noreferrer"
+              data-tip={contactItem.tooltip}
+            >
               {contactItem.icon}
             </a>
           </li>
