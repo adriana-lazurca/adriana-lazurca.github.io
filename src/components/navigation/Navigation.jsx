@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { AiOutlineHome } from 'react-icons/ai';
 import { MdWorkOutline, MdOutlineSchool, MdOutlineContactPage } from 'react-icons/md';
 
@@ -36,8 +35,18 @@ const navigationItems = {
   },
 };
 
-const selectors = Object.entries(sectionItems).map(([, element]) => element.selector);
+const sections = Object.entries(sectionItems);
+const selectors = sections.map(([, element]) => element.selector);
+
 const ids = Object.keys(navigationItems);
+
+const matchSectionElement = (target) => {
+  const matchedSection = sections.find(([, section]) => target.matches(section.selector));
+
+  const matchedSectionId = matchedSection && matchedSection[0];
+
+  return matchedSectionId;
+};
 
 export const Navigation = () => {
   const [elementInView, setElementInView] = useState(ids[0]);
@@ -45,6 +54,7 @@ export const Navigation = () => {
   useNavigation({
     selectors,
     ids,
+    matchSectionElement,
     onElementInViewChange: setElementInView,
   });
 

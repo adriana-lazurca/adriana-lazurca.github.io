@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
 
-const useNavigation = ({ selectors, ids, onElementInViewChange }) => {
+const useNavigation = ({ selectors, matchSectionElement, onElementInViewChange }) => {
   const elementsRatio = useRef({});
   const visibleElement = useRef('');
 
@@ -23,8 +23,7 @@ const useNavigation = ({ selectors, ids, onElementInViewChange }) => {
   const handleElementInViewChange = useCallback(
     (entries) => {
       entries.forEach((entry) => {
-        // const matchedElementId = isElementMatch(entry.target);
-        const matchedElementId = ids.find((id) => entry.target.className.includes(id));
+        const matchedElementId = matchSectionElement(entry.target);
         elementsRatio.current[matchedElementId] = entry.intersectionRatio;
 
         if (!entry.isIntersecting) {
@@ -39,7 +38,7 @@ const useNavigation = ({ selectors, ids, onElementInViewChange }) => {
       });
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [JSON.stringify(ids), onElementInViewChange],
+    [onElementInViewChange, matchSectionElement],
   );
 
   useEffect(() => {
@@ -56,7 +55,7 @@ const useNavigation = ({ selectors, ids, onElementInViewChange }) => {
       observer.disconnect();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [JSON.stringify(selectors), onElementInViewChange]);
+  }, [JSON.stringify(selectors), onElementInViewChange, matchSectionElement]);
 };
 
 export default useNavigation;
